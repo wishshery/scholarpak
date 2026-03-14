@@ -72,19 +72,19 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm" ref={navRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-[68px]">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group" onClick={handleLinkClick}>
+          <Link href="/" className="flex items-center gap-3 group" onClick={handleLinkClick}>
             <img
               src={LOGO_URL}
               alt="ScholarPak Logo"
-              className="w-12 h-12 rounded-xl object-cover"
+              className="w-16 h-16 rounded-xl object-contain"
               onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }}
             />
-            <span className="font-extrabold text-xl text-brand-900 font-heading tracking-tight" style={{display:'none'}}>
+            <span className="font-extrabold text-2xl text-brand-900 font-heading tracking-tight" style={{display:'none'}}>
               Scholar<span className="text-gold-500">Pak</span>
             </span>
-            <span className="font-extrabold text-xl text-brand-900 font-heading tracking-tight">
+            <span className="font-extrabold text-2xl text-brand-900 font-heading tracking-tight">
               Scholar<span className="text-gold-500">Pak</span>
             </span>
           </Link>
