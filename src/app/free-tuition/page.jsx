@@ -9,7 +9,7 @@ export const metadata = {
 
 const FREE_TUITION_COUNTRIES = [
   {
-    flag: '🇩🇪', name: 'Germany', slug: 'germany',
+    cc: 'de', name: 'Germany', slug: 'germany',
     policy: 'All public universities in Germany are tuition-FREE for all students, including internationals. Students only pay a semester administrative fee of €150–€350.',
     livingCost: '€850–€1,200/month',
     language: 'Many programs in English; German recommended for daily life',
@@ -21,7 +21,7 @@ const FREE_TUITION_COUNTRIES = [
     badgeColor: 'bg-emerald-100 text-emerald-700',
   },
   {
-    flag: '🇦🇹', name: 'Austria', slug: 'austria',
+    cc: 'at', name: 'Austria', slug: 'austria',
     policy: 'EU/EEA students study free. International students pay ~€726/semester at public universities. OeAD scholarship covers this fee + stipend.',
     livingCost: '€1,000–€1,400/month (Vienna is more expensive)',
     language: 'German is primary; some English programs available',
@@ -33,7 +33,7 @@ const FREE_TUITION_COUNTRIES = [
     badgeColor: 'bg-blue-100 text-blue-700',
   },
   {
-    flag: '🇳🇴', name: 'Norway', slug: 'norway',
+    cc: 'no', name: 'Norway', slug: 'norway',
     policy: 'All public universities in Norway charge NO tuition fees for any student, including international students. Living costs are high but quality of life is exceptional.',
     livingCost: 'NOK 13,000–17,000/month (expensive)',
     language: 'English-taught programs widely available',
@@ -45,7 +45,7 @@ const FREE_TUITION_COUNTRIES = [
     badgeColor: 'bg-emerald-100 text-emerald-700',
   },
   {
-    flag: '🇫🇮', name: 'Finland', slug: 'finland',
+    cc: 'fi', name: 'Finland', slug: 'finland',
     policy: 'Finnish universities charge tuition (€6,000–€18,000/year) for non-EU students but offer generous merit scholarships that cover up to 100% of tuition.',
     livingCost: '€1,000–€1,400/month',
     language: 'Excellent English programs — no Finnish required',
@@ -57,7 +57,7 @@ const FREE_TUITION_COUNTRIES = [
     badgeColor: 'bg-amber-100 text-amber-700',
   },
   {
-    flag: '🇫🇷', name: 'France', slug: 'france',
+    cc: 'fr', name: 'France', slug: 'france',
     policy: 'French public universities charge very low tuition: ~€170/year for Bachelor, ~€243/year for Masters, ~€380 for PhD. Among the cheapest in Europe.',
     livingCost: '€1,000–€1,800/month (Paris is expensive)',
     language: 'French required for most programs; some English-taught',
@@ -69,7 +69,7 @@ const FREE_TUITION_COUNTRIES = [
     badgeColor: 'bg-blue-100 text-blue-700',
   },
   {
-    flag: '🇨🇿', name: 'Czech Republic', slug: 'czech-republic',
+    cc: 'cz', name: 'Czech Republic', slug: 'czech-republic',
     policy: 'Czech Republic charges NO tuition fees if you study in Czech language. English-taught programs charge fees, but government scholarship covers this.',
     livingCost: 'CZK 15,000–22,000/month (~€620–€900/month)',
     language: 'Czech language study available (funded); English programs also exist',
@@ -114,7 +114,7 @@ export default function FreeTuitionPage() {
                 <tr key={c.slug} className={`border-b border-slate-100 hover:bg-slate-50 transition-colors ${i % 2 === 0 ? '' : 'bg-slate-50/50'}`}>
                   <td className="px-5 py-3 font-semibold text-slate-800">
                     <Link href={`/countries/${c.slug}`} className="flex items-center gap-2 hover:text-brand-700">
-                      <span>{c.flag}</span> {c.name}
+                      <img src={`https://flagcdn.com/w40/${c.cc}.png`} alt={c.name} className="w-7 h-5 object-cover rounded" /> {c.name}
                     </Link>
                   </td>
                   <td className="px-5 py-3">
@@ -142,7 +142,7 @@ export default function FreeTuitionPage() {
           <div key={c.slug} id={c.slug} className="card p-7">
             <div className="flex items-start justify-between gap-4 mb-4">
               <div className="flex items-center gap-3">
-                <span className="text-4xl">{c.flag}</span>
+                <img src={`https://flagcdn.com/w40/${c.cc}.png`} alt={c.name} className="w-14 h-10 object-cover rounded shadow-sm" />
                 <div>
                   <h2 className="text-2xl font-bold text-brand-900 font-heading">{c.name}</h2>
                   <span className={`badge text-xs ${c.badgeColor} mt-1`}>{c.badge}</span>

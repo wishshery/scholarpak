@@ -16,23 +16,23 @@ const countries = [...new Set(scholarships.map((s) => s.country))].length;
 const FEATURED = scholarships.slice(0, 6);
 
 const COUNTRY_CARDS = [
-  { name: 'Germany', flag: '🇩🇪', count: scholarships.filter(s => s.country === 'Germany').length, slug: 'germany', highlight: 'Free tuition', color: 'from-yellow-50 to-amber-50 border-amber-100' },
-  { name: 'United Kingdom', flag: '🇬🇧', count: scholarships.filter(s => s.country === 'United Kingdom').length, slug: 'united-kingdom', highlight: 'Chevening & Commonwealth', color: 'from-blue-50 to-indigo-50 border-blue-100' },
-  { name: 'United States', flag: '🇺🇸', count: scholarships.filter(s => s.country === 'United States').length, slug: 'united-states', highlight: 'Fulbright Program', color: 'from-red-50 to-rose-50 border-red-100' },
-  { name: 'Turkey', flag: '🇹🇷', count: scholarships.filter(s => s.country === 'Turkey').length, slug: 'turkey', highlight: 'No IELTS required', color: 'from-rose-50 to-red-50 border-rose-100' },
-  { name: 'China', flag: '🇨🇳', count: scholarships.filter(s => s.country === 'China').length, slug: 'china', highlight: 'CSC Scholarship', color: 'from-orange-50 to-yellow-50 border-orange-100' },
-  { name: 'Australia', flag: '🇦🇺', count: scholarships.filter(s => s.country === 'Australia').length, slug: 'australia', highlight: 'Australia Awards', color: 'from-emerald-50 to-green-50 border-emerald-100' },
-  { name: 'Japan', flag: '🇯🇵', count: scholarships.filter(s => s.country === 'Japan').length, slug: 'japan', highlight: 'MEXT Scholarship', color: 'from-pink-50 to-rose-50 border-pink-100' },
-  { name: 'South Korea', flag: '🇰🇷', count: scholarships.filter(s => s.country === 'South Korea').length, slug: 'south-korea', highlight: 'KGSP Program', color: 'from-sky-50 to-blue-50 border-sky-100' },
+  { name: 'Germany', cc: 'de', count: scholarships.filter(s => s.country === 'Germany').length, slug: 'germany', highlight: 'Free tuition', color: 'from-yellow-50 to-amber-50 border-amber-100' },
+  { name: 'United Kingdom', cc: 'gb', count: scholarships.filter(s => s.country === 'United Kingdom').length, slug: 'united-kingdom', highlight: 'Chevening & Commonwealth', color: 'from-blue-50 to-indigo-50 border-blue-100' },
+  { name: 'United States', cc: 'us', count: scholarships.filter(s => s.country === 'United States').length, slug: 'united-states', highlight: 'Fulbright Program', color: 'from-red-50 to-rose-50 border-red-100' },
+  { name: 'Turkey', cc: 'tr', count: scholarships.filter(s => s.country === 'Turkey').length, slug: 'turkey', highlight: 'No IELTS required', color: 'from-rose-50 to-red-50 border-rose-100' },
+  { name: 'China', cc: 'cn', count: scholarships.filter(s => s.country === 'China').length, slug: 'china', highlight: 'CSC Scholarship', color: 'from-orange-50 to-yellow-50 border-orange-100' },
+  { name: 'Australia', cc: 'au', count: scholarships.filter(s => s.country === 'Australia').length, slug: 'australia', highlight: 'Australia Awards', color: 'from-emerald-50 to-green-50 border-emerald-100' },
+  { name: 'Japan', cc: 'jp', count: scholarships.filter(s => s.country === 'Japan').length, slug: 'japan', highlight: 'MEXT Scholarship', color: 'from-pink-50 to-rose-50 border-pink-100' },
+  { name: 'South Korea', cc: 'kr', count: scholarships.filter(s => s.country === 'South Korea').length, slug: 'south-korea', highlight: 'KGSP Program', color: 'from-sky-50 to-blue-50 border-sky-100' },
 ];
 
 const FREE_TUITION = [
-  { country: 'Germany', flag: '🇩🇪', note: 'No tuition at public universities', href: '/countries/germany' },
-  { country: 'Austria', flag: '🇦🇹', note: 'Nominal fees only', href: '/countries/austria' },
-  { country: 'Norway', flag: '🇳🇴', note: 'Free at public universities', href: '/countries/norway' },
-  { country: 'Finland', flag: '🇫🇮', note: 'Scholarships cover tuition', href: '/countries/finland' },
-  { country: 'Czech Republic', flag: '🇨🇿', note: 'Free if you study in Czech', href: '/countries/czech-republic' },
-  { country: 'France', flag: '🇫🇷', note: 'Very low fees at public unis', href: '/countries/france' },
+  { country: 'Germany', cc: 'de', note: 'No tuition at public universities', href: '/countries/germany' },
+  { country: 'Austria', cc: 'at', note: 'Nominal fees only', href: '/countries/austria' },
+  { country: 'Norway', cc: 'no', note: 'Free at public universities', href: '/countries/norway' },
+  { country: 'Finland', cc: 'fi', note: 'Scholarships cover tuition', href: '/countries/finland' },
+  { country: 'Czech Republic', cc: 'cz', note: 'Free if you study in Czech', href: '/countries/czech-republic' },
+  { country: 'France', cc: 'fr', note: 'Very low fees at public unis', href: '/countries/france' },
 ];
 
 export default function HomePage() {
@@ -164,7 +164,7 @@ export default function HomePage() {
                 href={`/countries/${c.slug}`}
                 className={`group p-5 rounded-2xl border bg-gradient-to-br ${c.color} hover:-translate-y-1 transition-all duration-300 hover:shadow-card`}
               >
-                <div className="text-3xl mb-3">{c.flag}</div>
+                <img src={`https://flagcdn.com/w40/${c.cc}.png`} alt={c.name} className="w-10 h-7 object-cover rounded shadow-sm mb-3" />
                 <h3 className="font-bold text-slate-800 text-sm group-hover:text-brand-700 transition-colors">{c.name}</h3>
                 <p className="text-xs text-slate-500 mt-0.5">{c.highlight}</p>
                 <p className="text-xs font-semibold text-brand-600 mt-2">
@@ -199,7 +199,7 @@ export default function HomePage() {
                 href={c.href}
                 className="bg-white/10 active:bg-white/25 border border-white/10 rounded-2xl p-4 text-center transition-all hover:-translate-y-1 group"
               >
-                <div className="text-3xl sm:text-4xl mb-2">{c.flag}</div>
+                <img src={`https://flagcdn.com/w40/${c.cc}.png`} alt={c.country} className="w-10 h-7 object-cover rounded shadow-sm mb-2 mx-auto" />
                 <div className="font-bold text-white text-sm">{c.country}</div>
                 <div className="text-blue-300 text-xs mt-1 hidden sm:block">{c.note}</div>
               </Link>

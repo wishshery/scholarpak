@@ -6,27 +6,27 @@ export const metadata = {
 };
 
 const COUNTRIES = [
-  { name: 'Germany', flag: '🇩🇪', slug: 'germany', region: 'Europe', highlight: 'Free tuition at public universities', scholarships: 3, note: 'No tuition fees' },
-  { name: 'United Kingdom', flag: '🇬🇧', slug: 'united-kingdom', region: 'Europe', highlight: 'Chevening & Commonwealth', scholarships: 2, note: 'Top world universities' },
-  { name: 'United States', flag: '🇺🇸', slug: 'united-states', region: 'North America', highlight: 'Fulbright Program', scholarships: 2, note: 'Ivy League access' },
-  { name: 'Turkey', flag: '🇹🇷', slug: 'turkey', region: 'Asia', highlight: 'No IELTS — fully funded', scholarships: 1, note: 'Most popular for Pakistanis' },
-  { name: 'China', flag: '🇨🇳', slug: 'china', region: 'Asia', highlight: 'CSC Government Scholarship', scholarships: 1, note: 'Large Pakistani community' },
-  { name: 'Australia', flag: '🇦🇺', slug: 'australia', region: 'Oceania', highlight: 'Australia Awards', scholarships: 1, note: 'High-quality education' },
-  { name: 'Japan', flag: '🇯🇵', slug: 'japan', region: 'Asia', highlight: 'MEXT Scholarship', scholarships: 1, note: 'Technology & research hub' },
-  { name: 'South Korea', flag: '🇰🇷', slug: 'south-korea', region: 'Asia', highlight: 'KGSP — fully funded', scholarships: 1, note: 'No IELTS required' },
-  { name: 'Hungary', flag: '🇭🇺', slug: 'hungary', region: 'Europe', highlight: 'Stipendium Hungaricum', scholarships: 2, note: 'Growing hub for Pakistanis' },
-  { name: 'Sweden', flag: '🇸🇪', slug: 'sweden', region: 'Europe', highlight: 'Swedish Institute Scholarships', scholarships: 1, note: 'High quality of life' },
-  { name: 'Austria', flag: '🇦🇹', slug: 'austria', region: 'Europe', highlight: 'OeAD Scholarship', scholarships: 1, note: 'Low-cost study' },
-  { name: 'France', flag: '🇫🇷', slug: 'france', region: 'Europe', highlight: 'Eiffel Excellence Program', scholarships: 1, note: 'World-class institutions' },
-  { name: 'Netherlands', flag: '🇳🇱', slug: 'netherlands', region: 'Europe', highlight: 'Orange Tulip Scholarship', scholarships: 1, note: 'English-taught programs' },
-  { name: 'Italy', flag: '🇮🇹', slug: 'italy', region: 'Europe', highlight: 'MAECI Government Scholarship', scholarships: 1, note: 'Low tuition, rich culture' },
-  { name: 'Finland', flag: '🇫🇮', slug: 'finland', region: 'Europe', highlight: 'University merit scholarships', scholarships: 1, note: 'Top education system' },
-  { name: 'Norway', flag: '🇳🇴', slug: 'norway', region: 'Europe', highlight: 'Free tuition at all unis', scholarships: 1, note: 'Free for all students' },
-  { name: 'Singapore', flag: '🇸🇬', slug: 'singapore', region: 'Asia', highlight: 'SINGA PhD Scholarship', scholarships: 1, note: 'Asia research hub' },
-  { name: 'Malaysia', flag: '🇲🇾', slug: 'malaysia', region: 'Asia', highlight: 'MPC Government Scholarship', scholarships: 1, note: 'Affordable & Islamic country' },
-  { name: 'Canada', flag: '🇨🇦', slug: 'canada', region: 'North America', highlight: 'Vanier CGS Scholarship', scholarships: 1, note: 'PR pathway after studies' },
-  { name: 'New Zealand', flag: '🇳🇿', slug: 'new-zealand', region: 'Oceania', highlight: 'NZ Government Scholarship', scholarships: 1, note: 'Safe & peaceful country' },
-  { name: 'Czech Republic', flag: '🇨🇿', slug: 'czech-republic', region: 'Europe', highlight: 'Free tuition in Czech language', scholarships: 1, note: 'Affordable European study' },
+  { name: 'Germany', cc: 'de', slug: 'germany', region: 'Europe', highlight: 'Free tuition at public universities', scholarships: 3, note: 'No tuition fees' },
+  { name: 'United Kingdom', cc: 'gb', slug: 'united-kingdom', region: 'Europe', highlight: 'Chevening & Commonwealth', scholarships: 2, note: 'Top world universities' },
+  { name: 'United States', cc: 'us', slug: 'united-states', region: 'North America', highlight: 'Fulbright Program', scholarships: 2, note: 'Ivy League access' },
+  { name: 'Turkey', cc: 'tr', slug: 'turkey', region: 'Asia', highlight: 'No IELTS — fully funded', scholarships: 1, note: 'Most popular for Pakistanis' },
+  { name: 'China', cc: 'cn', slug: 'china', region: 'Asia', highlight: 'CSC Government Scholarship', scholarships: 1, note: 'Large Pakistani community' },
+  { name: 'Australia', cc: 'au', slug: 'australia', region: 'Oceania', highlight: 'Australia Awards', scholarships: 1, note: 'High-quality education' },
+  { name: 'Japan', cc: 'jp', slug: 'japan', region: 'Asia', highlight: 'MEXT Scholarship', scholarships: 1, note: 'Technology & research hub' },
+  { name: 'South Korea', cc: 'kr', slug: 'south-korea', region: 'Asia', highlight: 'KGSP — fully funded', scholarships: 1, note: 'No IELTS required' },
+  { name: 'Hungary', cc: 'hu', slug: 'hungary', region: 'Europe', highlight: 'Stipendium Hungaricum', scholarships: 2, note: 'Growing hub for Pakistanis' },
+  { name: 'Sweden', cc: 'se', slug: 'sweden', region: 'Europe', highlight: 'Swedish Institute Scholarships', scholarships: 1, note: 'High quality of life' },
+  { name: 'Austria', cc: 'at', slug: 'austria', region: 'Europe', highlight: 'OeAD Scholarship', scholarships: 1, note: 'Low-cost study' },
+  { name: 'France', cc: 'fr', slug: 'france', region: 'Europe', highlight: 'Eiffel Excellence Program', scholarships: 1, note: 'World-class institutions' },
+  { name: 'Netherlands', cc: 'nl', slug: 'netherlands', region: 'Europe', highlight: 'Orange Tulip Scholarship', scholarships: 1, note: 'English-taught programs' },
+  { name: 'Italy', cc: 'it', slug: 'italy', region: 'Europe', highlight: 'MAECI Government Scholarship', scholarships: 1, note: 'Low tuition, rich culture' },
+  { name: 'Finland', cc: 'fi', slug: 'finland', region: 'Europe', highlight: 'University merit scholarships', scholarships: 1, note: 'Top education system' },
+  { name: 'Norway', cc: 'no', slug: 'norway', region: 'Europe', highlight: 'Free tuition at all unis', scholarships: 1, note: 'Free for all students' },
+  { name: 'Singapore', cc: 'sg', slug: 'singapore', region: 'Asia', highlight: 'SINGA PhD Scholarship', scholarships: 1, note: 'Asia research hub' },
+  { name: 'Malaysia', cc: 'my', slug: 'malaysia', region: 'Asia', highlight: 'MPC Government Scholarship', scholarships: 1, note: 'Affordable & Islamic country' },
+  { name: 'Canada', cc: 'ca', slug: 'canada', region: 'North America', highlight: 'Vanier CGS Scholarship', scholarships: 1, note: 'PR pathway after studies' },
+  { name: 'New Zealand', cc: 'nz', slug: 'new-zealand', region: 'Oceania', highlight: 'NZ Government Scholarship', scholarships: 1, note: 'Safe & peaceful country' },
+  { name: 'Czech Republic', cc: 'cz', slug: 'czech-republic', region: 'Europe', highlight: 'Free tuition in Czech language', scholarships: 1, note: 'Affordable European study' },
 ];
 
 const REGIONS = [...new Set(COUNTRIES.map((c) => c.region))];
@@ -57,7 +57,7 @@ export default function CountriesPage() {
                 className="card p-5 group hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="flex items-start gap-3">
-                  <span className="text-3xl">{country.flag}</span>
+                  <img src={`https://flagcdn.com/w40/${country.cc}.png`} alt={country.name} className="w-10 h-7 object-cover rounded shadow-sm mt-0.5 shrink-0" />
                   <div className="flex-1 min-w-0">
                     <h3 className="font-bold text-slate-800 group-hover:text-brand-700 transition-colors">{country.name}</h3>
                     <p className="text-xs text-slate-500 mt-0.5 truncate">{country.highlight}</p>

@@ -5,7 +5,7 @@ import scholarships from '@/data/scholarships.json';
 
 const COUNTRY_DATA = {
   germany: {
-    name: 'Germany', flag: '🇩🇪',
+    name: 'Germany', cc: 'de',
     headline: 'Study in Germany for Pakistani Students — Free Tuition & DAAD Scholarships',
     description: 'Germany is one of the top destinations for Pakistani students due to its world-class education, free tuition at public universities, and generous DAAD scholarships. Most Masters programs are taught in English.',
     tuition: 'FREE at all public universities (nominal semester fee ~€300)',
@@ -17,7 +17,7 @@ const COUNTRY_DATA = {
     tips: ['Apply to DAAD scholarships in September–October', 'German blocked account required (~€11,208)', 'Most programs start in October (winter) or April (summer)', 'Learn basic German — helpful for daily life'],
   },
   'united-kingdom': {
-    name: 'United Kingdom', flag: '🇬🇧',
+    name: 'United Kingdom', cc: 'gb',
     headline: 'Study in UK for Pakistani Students — Chevening & Commonwealth Scholarships',
     description: 'The UK is home to some of the world\'s best universities and offers prestigious Chevening and Commonwealth scholarships for Pakistani students. Most programs are 1 year for Masters.',
     tuition: '£15,000–£35,000/year (covered by scholarships)',
@@ -29,7 +29,7 @@ const COUNTRY_DATA = {
     tips: ['Chevening opens in August, closes November', 'Commonwealth closes December', 'Strong leadership potential required for Chevening', 'Apply 1 year in advance'],
   },
   'united-states': {
-    name: 'United States', flag: '🇺🇸',
+    name: 'United States', cc: 'us',
     headline: 'Study in USA for Pakistani Students — Fulbright Scholarship',
     description: 'The United States offers world-leading universities and the prestigious Fulbright scholarship program specifically for Pakistani students through USEFP.',
     tuition: '$20,000–$60,000/year (covered by Fulbright)',
@@ -41,7 +41,7 @@ const COUNTRY_DATA = {
     tips: ['Fulbright Pakistan opens April–May', 'Apply to Fulbright through USEFP, not directly', 'GRE/GMAT required for most programs', 'Start application process 18 months before intake'],
   },
   turkey: {
-    name: 'Turkey', flag: '🇹🇷',
+    name: 'Turkey', cc: 'tr',
     headline: 'Study in Turkey for Pakistani Students — Türkiye Burslari Scholarship',
     description: 'Turkey is the most popular study abroad destination for Pakistani students. Türkiye Burslari offers fully funded scholarships with no IELTS requirement and free Turkish language training.',
     tuition: 'FREE (fully covered by scholarship)',
@@ -53,7 +53,7 @@ const COUNTRY_DATA = {
     tips: ['Apply in January–February each year', 'No IELTS needed — Turkish language course provided', 'Muslim-friendly environment', 'Largest Pakistani student community in Europe/Asia'],
   },
   china: {
-    name: 'China', flag: '🇨🇳',
+    name: 'China', cc: 'cn',
     headline: 'Study in China for Pakistani Students — CSC Scholarship',
     description: 'China offers fully funded CSC scholarships for Pakistani students at hundreds of universities. Pakistan and China have strong bilateral ties making the process relatively easier.',
     tuition: 'FREE (CSC covers all tuition)',
@@ -65,7 +65,7 @@ const COUNTRY_DATA = {
     tips: ['Apply through HEC portal for government quota', 'CSC deadline typically March–April', 'Large Pakistani student community in China', 'CPEC-related fields have better chances'],
   },
   australia: {
-    name: 'Australia', flag: '🇦🇺',
+    name: 'Australia', cc: 'au',
     headline: 'Study in Australia for Pakistani Students — Australia Awards',
     description: 'Australia offers world-class education and the prestigious Australia Awards fully funded scholarships for Pakistani students pursuing Masters and PhD programs.',
     tuition: 'AUD 20,000–45,000/year (covered by scholarship)',
@@ -77,7 +77,7 @@ const COUNTRY_DATA = {
     tips: ['Australia Awards opens April–June', 'Apply through AusAid website', 'Strong development-sector background preferred', 'Allow 12–18 months for full process'],
   },
   japan: {
-    name: 'Japan', flag: '🇯🇵',
+    name: 'Japan', cc: 'jp',
     headline: 'Study in Japan for Pakistani Students — MEXT Scholarship',
     description: 'Japan\'s MEXT scholarship is one of the most prestigious fully funded scholarships for Pakistani students. No Japanese language required — free training is provided.',
     tuition: 'FREE at national universities',
@@ -89,7 +89,7 @@ const COUNTRY_DATA = {
     tips: ['MEXT Embassy track deadline May–June', 'MEXT University track deadline varies', 'Contact professors before applying', 'Research universities/labs carefully'],
   },
   hungary: {
-    name: 'Hungary', flag: '🇭🇺',
+    name: 'Hungary', cc: 'hu',
     headline: 'Study in Hungary for Pakistani Students — Stipendium Hungaricum',
     description: 'Hungary\'s Stipendium Hungaricum is a fast-growing scholarship program for Pakistani students offering fully funded Bachelor, Masters, and PhD degrees.',
     tuition: 'FREE (fully covered)',
@@ -101,7 +101,7 @@ const COUNTRY_DATA = {
     tips: ['Applications open January', 'Apply through HEC Pakistan for Pakistani quota', 'Increasing number of Pakistani students', 'Growing IT and engineering programs'],
   },
   'south-korea': {
-    name: 'South Korea', flag: '🇰🇷',
+    name: 'South Korea', cc: 'kr',
     headline: 'Study in South Korea for Pakistani Students — KGSP Scholarship',
     description: 'South Korea offers the prestigious Korean Government Scholarship Program (KGSP) for Pakistani students, covering full tuition, living costs, and even a Korean language course. No IELTS required.',
     tuition: 'FREE (covered by KGSP)',
@@ -113,7 +113,7 @@ const COUNTRY_DATA = {
     tips: ['KGSP applications open in February each year', 'No IELTS required for KGSP', 'Korean language course is mandatory for first year', 'Apply through the Korean Embassy in Islamabad'],
   },
   sweden: {
-    name: 'Sweden', flag: '🇸🇪',
+    name: 'Sweden', cc: 'se',
     headline: 'Study in Sweden for Pakistani Students — Swedish Institute Scholarship',
     description: 'Sweden offers world-class education with the Swedish Institute Scholarship (SISGP) for global professionals. Programs are taught in English and Swedish universities are highly research-focused.',
     tuition: '100,000–170,000 SEK/year (covered by scholarship)',
@@ -125,7 +125,7 @@ const COUNTRY_DATA = {
     tips: ['Swedish Institute Scholarship opens in November', 'Focus on leadership and community involvement in application', 'STEM and sustainability fields are prioritized', 'Strong industry connections for internships'],
   },
   austria: {
-    name: 'Austria', flag: '🇦🇹',
+    name: 'Austria', cc: 'at',
     headline: 'Study in Austria for Pakistani Students — OeAD Scholarship',
     description: 'Austria offers affordable education with the OeAD (Austrian Agency for Education and Internationalisation) scholarships for Pakistani students. Vienna and Graz are major study destinations.',
     tuition: '€726/semester at public universities',
@@ -137,7 +137,7 @@ const COUNTRY_DATA = {
     tips: ['OeAD scholarships open in October', 'German language skills significantly improve acceptance chances', 'Austria is a gateway to EU job market', 'Health insurance is mandatory and affordable'],
   },
   france: {
-    name: 'France', flag: '🇫🇷',
+    name: 'France', cc: 'fr',
     headline: 'Study in France for Pakistani Students — Eiffel Excellence Scholarship',
     description: 'France offers prestigious education with the Eiffel Excellence Scholarship Program by Campus France. Grandes Écoles and top research universities are world-renowned.',
     tuition: '€2,770–€3,770/year at public universities (low fees)',
@@ -149,7 +149,7 @@ const COUNTRY_DATA = {
     tips: ['Eiffel scholarship applications open in January', 'Campus France Pakistan processes all applications', 'French programs are far cheaper than UK/US', 'Strong engineering and business programs'],
   },
   netherlands: {
-    name: 'Netherlands', flag: '🇳🇱',
+    name: 'Netherlands', cc: 'nl',
     headline: 'Study in Netherlands for Pakistani Students — Orange Tulip Scholarship',
     description: 'The Netherlands has 2,100+ English-taught programs and the Orange Tulip Scholarship for Pakistani students. Dutch universities rank among the best in Europe.',
     tuition: '€8,000–€15,000/year (OTS covers this)',
@@ -161,7 +161,7 @@ const COUNTRY_DATA = {
     tips: ['Orange Tulip Scholarship opens in December', 'Apply to university first, then scholarship', 'Dutch people are very English-friendly', 'Cycling culture — affordable city transport'],
   },
   italy: {
-    name: 'Italy', flag: '🇮🇹',
+    name: 'Italy', cc: 'it',
     headline: 'Study in Italy for Pakistani Students — MAECI Government Scholarship',
     description: 'Italy offers the Italian Government Scholarship (MAECI) for Pakistani students and has very affordable tuition at state universities. Italy is home to the world\'s oldest university.',
     tuition: '€900–€4,000/year at public universities',
@@ -173,7 +173,7 @@ const COUNTRY_DATA = {
     tips: ['MAECI scholarship applications open in April', 'Apply through the Italian Embassy in Islamabad', 'Cheapest tuition in Western Europe', 'Strong architecture, design, and engineering programs'],
   },
   finland: {
-    name: 'Finland', flag: '🇫🇮',
+    name: 'Finland', cc: 'fi',
     headline: 'Study in Finland for Pakistani Students — University Merit Scholarships',
     description: 'Finland has the world\'s top-ranked education system. Finnish universities offer merit-based scholarships and affordable tuition compared to UK/US. Helsinki and Tampere are top study cities.',
     tuition: '€8,000–€15,000/year (merit scholarships cover 50–100%)',
@@ -185,7 +185,7 @@ const COUNTRY_DATA = {
     tips: ['Apply directly to Finnish universities from September onwards', 'Each university offers its own scholarships', 'Finland is the happiest country in the world', 'Strong tech industry — Nokia, Rovio, Supercell'],
   },
   norway: {
-    name: 'Norway', flag: '🇳🇴',
+    name: 'Norway', cc: 'no',
     headline: 'Study in Norway for Pakistani Students — Free Tuition at All Universities',
     description: 'Norway offers FREE tuition at all public universities for ALL students, including Pakistanis. You only need to cover living expenses. Norway is also the gateway to Nordic career opportunities.',
     tuition: 'FREE at all public universities (for everyone)',
@@ -197,7 +197,7 @@ const COUNTRY_DATA = {
     tips: ['No tuition fees — just apply to the university directly', 'Applications open December for following August intake', 'Cost of living is high — budget carefully', 'Many English-taught Masters being added each year'],
   },
   singapore: {
-    name: 'Singapore', flag: '🇸🇬',
+    name: 'Singapore', cc: 'sg',
     headline: 'Study in Singapore for Pakistani Students — SINGA PhD Scholarship',
     description: 'Singapore is Asia\'s research and education hub. The SINGA (Singapore International Graduate Award) fully funds PhD studies at NUS, NTU, and A*STAR research institutes.',
     tuition: 'FREE (SINGA covers full tuition)',
@@ -209,7 +209,7 @@ const COUNTRY_DATA = {
     tips: ['SINGA is for PhD only — opens in June & October', 'NUS and NTU are consistently top 15 globally', 'Very safe country — welcoming Muslim community', 'Strong research culture — ideal for PhD aspirants'],
   },
   malaysia: {
-    name: 'Malaysia', flag: '🇲🇾',
+    name: 'Malaysia', cc: 'my',
     headline: 'Study in Malaysia for Pakistani Students — Government & University Scholarships',
     description: 'Malaysia is the most affordable English-medium study destination in Asia. It\'s an Islamic country with a large Pakistani diaspora, and offers government scholarships through MPC.',
     tuition: 'RM 10,000–40,000/year (very affordable)',
@@ -221,7 +221,7 @@ const COUNTRY_DATA = {
     tips: ['Tuition and living costs are very affordable', 'Large Pakistani and Muslim community', 'Malaysia has direct flights to Pakistan', 'Easy visa process through university EMGS system'],
   },
   canada: {
-    name: 'Canada', flag: '🇨🇦',
+    name: 'Canada', cc: 'ca',
     headline: 'Study in Canada for Pakistani Students — Vanier & University Scholarships',
     description: 'Canada is a top destination for Pakistani students with world-class universities and a clear pathway to Permanent Residency. The Vanier CGS offers $50,000/year for PhD students.',
     tuition: 'CAD 20,000–40,000/year',
@@ -233,7 +233,7 @@ const COUNTRY_DATA = {
     tips: ['Apply 6–8 months before intake', 'PR pathway through Express Entry after graduation', 'PGWP allows you to work 3 years after graduation', 'Vanier CGS for PhD opens in September'],
   },
   'new-zealand': {
-    name: 'New Zealand', flag: '🇳🇿',
+    name: 'New Zealand', cc: 'nz',
     headline: 'Study in New Zealand for Pakistani Students — NZ Government Scholarship',
     description: 'New Zealand offers the New Zealand Government Scholarships for developing countries including Pakistan. NZ universities have a strong focus on research and sustainable development.',
     tuition: 'NZD 22,000–35,000/year (covered by scholarship)',
@@ -245,7 +245,7 @@ const COUNTRY_DATA = {
     tips: ['NZ Government Scholarships open in February', 'Apply through NZ High Commission in Islamabad', 'Safe, peaceful country with friendly community', 'Strong agriculture, engineering, and IT programs'],
   },
   'czech-republic': {
-    name: 'Czech Republic', flag: '🇨🇿',
+    name: 'Czech Republic', cc: 'cz',
     headline: 'Study in Czech Republic for Pakistani Students — Government Scholarship',
     description: 'The Czech Republic offers free tuition at public universities for programs taught in Czech. The Czech government also provides scholarships for Pakistani students through the Ministry of Education.',
     tuition: 'FREE in Czech language programs; €2,000–€8,000 for English programs',
@@ -290,7 +290,7 @@ export default function CountryPage({ params }) {
       {/* Hero */}
       <div className="card p-8 mb-8 bg-gradient-to-br from-brand-50 to-blue-50 border-brand-100">
         <div className="flex items-center gap-4 mb-4">
-          <span className="text-5xl">{data.flag}</span>
+          <img src={`https://flagcdn.com/w80/${data.cc}.png`} alt={data.name} className="w-20 h-14 object-cover rounded-lg shadow-md" />
           <div>
             <h1 className="text-3xl font-extrabold text-brand-900 font-heading">{data.headline}</h1>
           </div>
