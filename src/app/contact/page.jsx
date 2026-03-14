@@ -65,7 +65,7 @@ export default function ContactPage() {
             },
             {
               q: 'I found incorrect scholarship information. How do I report it?',
-              a: 'Please email us at hello@scholarpak.com with the scholarship name and the correction. We'll update it within 24 hours.',
+              a: "Please email us at hello@scholarpak.com with the scholarship name and the correction. We'll update it within 24 hours.",
             },
             {
               q: 'Can I submit a scholarship that\'s not listed?',
