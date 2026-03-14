@@ -3,8 +3,29 @@ import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X, ChevronDown, Bell } from 'lucide-react';
 
-// Canva logo — Option 1 (Graduation Cap & Globe)
-const LOGO_URL = 'https://design.canva.ai/W24ivmkajPRtJ3O';
+// Inline SVG Logo — always renders, no broken image fallback needed
+function ScholarPakLogo() {
+  return (
+    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Background circle */}
+      <circle cx="26" cy="26" r="26" fill="#1e3a8a"/>
+      {/* Graduation cap board */}
+      <polygon points="26,13 44,21 26,29 8,21" fill="#ffffff"/>
+      {/* Cap top shine */}
+      <polygon points="26,13 44,21 26,18" fill="#e0e7ff" opacity="0.4"/>
+      {/* Left tassel rope */}
+      <line x1="8" y1="21" x2="8" y2="31" stroke="#f59e0b" strokeWidth="2.5" strokeLinecap="round"/>
+      {/* Tassel ball */}
+      <circle cx="8" cy="33" r="2.5" fill="#f59e0b"/>
+      {/* Diploma scroll */}
+      <rect x="17" y="30" width="18" height="12" rx="2" fill="#f59e0b"/>
+      <rect x="19" y="32" width="14" height="2" rx="1" fill="#1e3a8a" opacity="0.5"/>
+      <rect x="19" y="36" width="10" height="2" rx="1" fill="#1e3a8a" opacity="0.5"/>
+      {/* Scroll ribbon */}
+      <rect x="23" y="29" width="6" height="14" rx="1" fill="#fbbf24"/>
+    </svg>
+  );
+}
 
 const navLinks = [
   {
@@ -75,15 +96,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group" onClick={handleLinkClick}>
-            <img
-              src={LOGO_URL}
-              alt="ScholarPak Logo"
-              className="w-16 h-16 rounded-xl object-contain"
-              onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }}
-            />
-            <span className="font-extrabold text-2xl text-brand-900 font-heading tracking-tight" style={{display:'none'}}>
-              Scholar<span className="text-gold-500">Pak</span>
-            </span>
+            <ScholarPakLogo />
             <span className="font-extrabold text-2xl text-brand-900 font-heading tracking-tight">
               Scholar<span className="text-gold-500">Pak</span>
             </span>
