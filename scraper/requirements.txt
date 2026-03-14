@@ -1,0 +1,5 @@
+aiohttp==3.9.3
+beautifulsoup4==4.12.3
+playwright==1.42.0
+lxml==5.1.0
+python-dateutil==2.9.0

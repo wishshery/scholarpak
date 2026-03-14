@@ -1,0 +1,88 @@
+name: Daily Scholarship Update
+
+on:
+  schedule:
+    # Runs every day at 06:00 UTC (11:00 PKT)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    # Also allow manual trigger from GitHub Actions UI
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+
+    steps:
+      # ── Checkout ──
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Python setup ──
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        working-directory: scraper
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
+          playwright install-deps chromium
+
+      # ── Run scraper ──
+      - name: Run scholarship scraper
+        working-directory: scraper
+        run: python scraper.py
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      # ── Check for changes ──
+      - name: Check for scholarship data changes
+        id: changes
+        run: |
+          git diff --quiet src/data/scholarships.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      # ── Commit & push if changed ──
+      - name: Commit updated scholarship data
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "bot@scholarpak.com"
+          git config --local user.name "ScholarPak Bot"
+          git add src/data/scholarships.json scraper/last_run.json
+          git commit -m "chore: update scholarships data [$(date +'%Y-%m-%d')]"
+          git push
+
+      # ── Trigger Vercel/Netlify deploy ──
+      - name: Trigger deployment
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          if [ -n "${{ secrets.DEPLOY_HOOK_URL }}" ]; then
+            curl -X POST "${{ secrets.DEPLOY_HOOK_URL }}"
+            echo "Deployment triggered successfully"
+          else
+            echo "No DEPLOY_HOOK_URL set — skipping deploy trigger"
+          fi
+
+      # ── Upload run artifact ──
+      - name: Upload scraper run summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-run-${{ github.run_number }}
+          path: scraper/last_run.json
+          retention-days: 14
+
+      - name: Summary
+        run: |
+          echo "## Scholarship Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "- Run date: $(date)" >> $GITHUB_STEP_SUMMARY
+          if [ -f scraper/last_run.json ]; then
+            echo "- Results:" >> $GITHUB_STEP_SUMMARY
+            cat scraper/last_run.json >> $GITHUB_STEP_SUMMARY
+          fi
