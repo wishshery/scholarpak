@@ -37,6 +37,13 @@ export const metadata = {
   alternates: { canonical: 'https://scholarpak.com' },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#1e3a8a',
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
@@ -44,8 +51,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="ScholarPak" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
       </head>
-      <body className="min-h-screen flex flex-col bg-slate-50">
+      <body className="min-h-screen flex flex-col bg-slate-50 overflow-x-hidden">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

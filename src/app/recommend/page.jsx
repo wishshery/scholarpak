@@ -82,7 +82,7 @@ export default function RecommendPage() {
   const reset = () => { setStep(0); setAnswers({ degree: '', field: '', ielts: '', country: '' }); setResults([]); };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
       {/* Header */}
       <div className="text-center mb-10">
         <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -157,7 +157,7 @@ export default function RecommendPage() {
         <div className="animate-slide-up">
           <h2 className="text-xl font-bold text-slate-800 mb-2 text-center">What is your IELTS score?</h2>
           <p className="text-center text-slate-500 text-sm mb-8">Enter your current score or expected score. Enter 0 if you haven't taken IELTS yet.</p>
-          <div className="grid grid-cols-3 gap-3 mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
             {['0 (No IELTS)', '5.5', '6.0', '6.5', '7.0', '7.5+'].map((score) => (
               <button
                 key={score}

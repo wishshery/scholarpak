@@ -35,13 +35,15 @@ export default function Footer() {
               <h3 className="text-xl font-bold text-white font-heading">Get Scholarship Alerts</h3>
               <p className="text-slate-400 mt-1 text-sm">New scholarships delivered to your inbox daily.</p>
             </div>
-            <form className="flex gap-2 w-full md:w-auto">
+            <form className="flex flex-col xs:flex-row gap-2 w-full md:w-auto">
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 md:w-72 px-4 py-3 rounded-xl bg-brand-800 border border-brand-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-400 text-sm"
+                className="flex-1 md:w-72 px-4 py-3 rounded-xl bg-brand-800 border border-brand-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-400"
+                style={{ fontSize: '16px' }}
+                autoComplete="email"
               />
-              <button type="submit" className="btn-gold px-5 py-3 text-sm flex items-center gap-2">
+              <button type="submit" className="btn-gold px-5 py-3 text-sm flex items-center justify-center gap-2 whitespace-nowrap">
                 <Mail className="w-4 h-4" /> Subscribe
               </button>
             </form>
@@ -49,7 +51,7 @@ export default function Footer() {
         </div>
 
         {/* Links grid */}
-        <div className="py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="py-10 sm:py-12 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-4">
@@ -96,7 +98,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="py-6 border-t border-brand-800 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <div className="py-6 border-t border-brand-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 pb-safe">
           <p>© {new Date().getFullYear()} ScholarPak. Scholarships verified from official sources.</p>
           <p className="flex items-center gap-1">
             Made with <Heart className="w-3 h-3 text-red-400 fill-red-400" /> for Pakistani students

@@ -47,11 +47,15 @@ export default function SearchFilter({ onFilter, total }) {
         <div className="relative flex-1">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
           <input
-            type="text"
-            placeholder="Search scholarships, countries, universities..."
+            type="search"
+            placeholder="Search scholarships, countries..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="input-field pl-11"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck="false"
           />
           {query && (
             <button onClick={() => setQuery('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
@@ -80,7 +84,7 @@ export default function SearchFilter({ onFilter, total }) {
       {/* Filter panel */}
       {showFilters && (
         <div className="mt-4 pt-4 border-t border-slate-100 animate-fade-in">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
             <div>
               <label className="text-xs font-semibold text-slate-500 uppercase tracking-wide block mb-1.5">Country</label>
               <select value={country} onChange={(e) => setCountry(e.target.value)} className="filter-select w-full text-sm">

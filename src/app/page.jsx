@@ -49,41 +49,42 @@ export default function HomePage() {
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-20 w-96 h-96 bg-gold-400 rounded-full blur-3xl" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 md:py-28">
           <div className="text-center max-w-4xl mx-auto animate-slide-up">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
-              <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-              {totalScholarships}+ Active Scholarships for 2026 Intakes
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-semibold mb-5 sm:mb-6 backdrop-blur-sm">
+              <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse shrink-0" />
+              {totalScholarships}+ Active Scholarships for 2026
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white font-heading leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white font-heading leading-tight">
               Global Scholarships for
-              <span className="block text-gradient bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-gold-400 to-yellow-300 bg-clip-text text-transparent">
                 Pakistani Students
               </span>
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-blue-200 max-w-2xl mx-auto leading-relaxed">
-              Discover fully funded Bachelor, Master, and PhD scholarships worldwide. Updated daily from official sources.
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-blue-200 max-w-2xl mx-auto leading-relaxed px-2">
+              Discover fully funded Bachelor, Master, and PhD scholarships worldwide. Updated daily.
             </p>
 
             {/* Search */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-3 max-w-2xl mx-auto">
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 max-w-2xl mx-auto">
               <div className="relative flex-1">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
                 <input
-                  type="text"
-                  placeholder="Search by country, degree, or scholarship name..."
-                  className="w-full pl-12 pr-5 py-4 rounded-xl bg-white text-slate-800 placeholder-slate-400 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-gold-400 shadow-lg"
+                  type="search"
+                  placeholder="Search scholarships, countries..."
+                  className="w-full pl-12 pr-5 py-4 rounded-xl bg-white text-slate-800 placeholder-slate-400 font-medium focus:outline-none focus:ring-2 focus:ring-gold-400 shadow-lg"
+                  style={{ fontSize: '16px' }}
                 />
               </div>
-              <Link href="/scholarships" className="btn-gold py-4 px-7 text-sm justify-center">
+              <Link href="/scholarships" className="btn-gold py-4 px-7 justify-center">
                 Search <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
-            {/* Quick stats */}
-            <div className="mt-12 flex flex-wrap justify-center gap-6 md:gap-10">
+            {/* Quick stats — 2×2 grid on mobile, row on larger */}
+            <div className="mt-10 sm:mt-12 grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-y-6 gap-x-8 sm:gap-10">
               {[
                 { icon: Award, label: 'Active Scholarships', value: `${totalScholarships}+` },
                 { icon: Globe, label: 'Countries', value: `${countries}+` },
@@ -91,8 +92,8 @@ export default function HomePage() {
                 { icon: Users, label: 'Students Helped', value: '50K+' },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="text-center">
-                  <div className="text-2xl md:text-3xl font-extrabold text-white font-heading">{value}</div>
-                  <div className="text-blue-300 text-sm mt-0.5">{label}</div>
+                  <div className="text-2xl sm:text-3xl font-extrabold text-white font-heading">{value}</div>
+                  <div className="text-blue-300 text-xs sm:text-sm mt-0.5">{label}</div>
                 </div>
               ))}
             </div>
@@ -191,16 +192,16 @@ export default function HomePage() {
               Countries where Pakistani students can study with zero or very low tuition fees
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4">
             {FREE_TUITION.map((c) => (
               <Link
                 key={c.country}
                 href={c.href}
-                className="bg-white/10 hover:bg-white/20 border border-white/10 rounded-2xl p-4 text-center transition-all hover:-translate-y-1 group"
+                className="bg-white/10 active:bg-white/25 border border-white/10 rounded-2xl p-4 text-center transition-all hover:-translate-y-1 group"
               >
-                <div className="text-4xl mb-2">{c.flag}</div>
+                <div className="text-3xl sm:text-4xl mb-2">{c.flag}</div>
                 <div className="font-bold text-white text-sm">{c.country}</div>
-                <div className="text-blue-300 text-xs mt-1">{c.note}</div>
+                <div className="text-blue-300 text-xs mt-1 hidden sm:block">{c.note}</div>
               </Link>
             ))}
           </div>
@@ -213,9 +214,9 @@ export default function HomePage() {
       </section>
 
       {/* ── AI RECOMMENDER ── */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-12 sm:py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-4 py-2 rounded-full text-sm font-semibold mb-5">
                 <Zap className="w-4 h-4" /> AI-Powered Tool
