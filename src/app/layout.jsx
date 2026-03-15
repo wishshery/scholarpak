@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
+  metadataBase: new URL('https://scholarpak.com'),
   title: {
     default: 'ScholarPak — Global Scholarships for Pakistani Students 2026',
     template: '%s | ScholarPak',
