@@ -1,6 +1,7 @@
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Script from 'next/script';
 
 export const metadata = {
   metadataBase: new URL('https://scholarpak.com'),
@@ -59,6 +60,19 @@ export default function RootLayout({ children }) {
         <meta name="format-detection" content="telephone=no" />
       </head>
       <body className="min-h-screen flex flex-col bg-slate-50 overflow-x-hidden">
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-75FNYNT6H0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-75FNYNT6H0');
+          `}
+        </Script>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
