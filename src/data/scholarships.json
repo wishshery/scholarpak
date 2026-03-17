@@ -4,758 +4,1617 @@
     "name": "DAAD Development-Related Postgraduate Courses",
     "country": "Germany",
     "university": "Various German Universities",
-    "degree": ["Masters"],
-    "fields": ["Engineering", "Agriculture", "Environmental Sciences", "Urban Development", "Economics", "Public Health"],
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "Engineering",
+      "Agriculture",
+      "Environmental Sciences",
+      "Urban Development",
+      "Economics",
+      "Public Health"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "934 EUR",
     "travel_allowance": "Yes",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 6.0", "TOEFL 550", "Medium of Instruction"],
+    "tests_accepted": [
+      "IELTS 6.0",
+      "TOEFL 550",
+      "Medium of Instruction"
+    ],
     "deadline": "October 1 (annually)",
-    "benefits": ["Full tuition", "Monthly stipend €934", "Travel allowance", "Health insurance", "Study & research allowance"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend €934",
+      "Travel allowance",
+      "Health insurance",
+      "Study & research allowance"
+    ],
     "link": "https://www.daad.de/en/study-and-research-in-germany/scholarships/daad-scholarships/development/",
     "source": "https://www.daad.de",
     "description": "DAAD offers fully funded postgraduate scholarships for students from developing countries to pursue Masters degrees at German universities in development-related fields.",
     "open_to_pakistan": true,
     "slug": "daad-development-postgraduate-germany",
     "intake_year": 2026,
-    "tags": ["fully-funded", "no-ielts", "europe", "masters"]
+    "tags": [
+      "fully-funded",
+      "no-ielts",
+      "europe",
+      "masters"
+    ]
   },
   {
     "id": "chevening-uk",
     "name": "Chevening Scholarship",
     "country": "United Kingdom",
     "university": "Any UK University",
-    "degree": ["Masters"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "~£1,100/month",
     "travel_allowance": "Yes — return flights covered",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 79"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 79"
+    ],
     "deadline": "November (annually)",
-    "benefits": ["Full tuition fees", "Monthly living allowance", "Return flights", "Arrival allowance", "Homeward departure allowance"],
+    "benefits": [
+      "Full tuition fees",
+      "Monthly living allowance",
+      "Return flights",
+      "Arrival allowance",
+      "Homeward departure allowance"
+    ],
     "link": "https://www.chevening.org/scholarships/",
     "source": "https://www.chevening.org",
     "description": "Chevening is the UK government's flagship international scholarship programme. It offers fully funded Masters scholarships to outstanding emerging leaders from Pakistan.",
     "open_to_pakistan": true,
     "slug": "chevening-scholarship-uk",
     "intake_year": 2026,
-    "tags": ["fully-funded", "uk", "masters", "leadership"]
+    "tags": [
+      "fully-funded",
+      "uk",
+      "masters",
+      "leadership"
+    ]
   },
   {
     "id": "commonwealth-masters-phd",
     "name": "Commonwealth Scholarship (Masters & PhD)",
     "country": "United Kingdom",
     "university": "UK Universities",
-    "degree": ["Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "~£1,347/month",
     "travel_allowance": "Yes",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.0", "TOEFL iBT 79"],
+    "tests_accepted": [
+      "IELTS 6.0",
+      "TOEFL iBT 79"
+    ],
     "deadline": "December (annually)",
-    "benefits": ["Tuition fees", "Living allowance", "Airfare", "Thesis grant", "Study travel grant"],
+    "benefits": [
+      "Tuition fees",
+      "Living allowance",
+      "Airfare",
+      "Thesis grant",
+      "Study travel grant"
+    ],
     "link": "https://cscuk.fcdo.gov.uk/scholarships/",
     "source": "https://cscuk.fcdo.gov.uk",
     "description": "Funded by the UK Foreign, Commonwealth & Development Office, these scholarships allow talented people from Commonwealth countries including Pakistan to pursue Masters and PhD studies in the UK.",
     "open_to_pakistan": true,
     "slug": "commonwealth-scholarship-uk",
     "intake_year": 2026,
-    "tags": ["fully-funded", "uk", "masters", "phd", "commonwealth"]
+    "tags": [
+      "fully-funded",
+      "uk",
+      "masters",
+      "phd",
+      "commonwealth"
+    ]
   },
   {
     "id": "erasmus-mundus",
     "name": "Erasmus Mundus Joint Masters",
     "country": "Europe (Multiple Countries)",
     "university": "European University Consortiums",
-    "degree": ["Masters"],
-    "fields": ["Engineering", "Science", "Humanities", "Social Sciences", "Business", "Arts"],
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "Engineering",
+      "Science",
+      "Humanities",
+      "Social Sciences",
+      "Business",
+      "Arts"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "~€1,000/month",
     "travel_allowance": "Yes",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90", "Cambridge C1"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90",
+      "Cambridge C1"
+    ],
     "deadline": "January–March (varies by programme)",
-    "benefits": ["Full tuition", "Monthly allowance", "Travel & installation costs", "Study in 2-3 European countries"],
+    "benefits": [
+      "Full tuition",
+      "Monthly allowance",
+      "Travel & installation costs",
+      "Study in 2-3 European countries"
+    ],
     "link": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
     "source": "https://erasmus-plus.ec.europa.eu",
     "description": "Erasmus Mundus scholarships fund top Pakistani students to study integrated Masters programmes delivered by international university consortia across Europe.",
     "open_to_pakistan": true,
     "slug": "erasmus-mundus-joint-masters-europe",
     "intake_year": 2026,
-    "tags": ["fully-funded", "europe", "masters", "multiple-countries"]
+    "tags": [
+      "fully-funded",
+      "europe",
+      "masters",
+      "multiple-countries"
+    ]
   },
   {
     "id": "fulbright-pakistan",
     "name": "Fulbright Scholarship Pakistan",
     "country": "United States",
     "university": "US Universities",
-    "degree": ["Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "~$2,000/month",
     "travel_allowance": "Yes — roundtrip airfare",
     "ielts_required": false,
-    "tests_accepted": ["GRE", "TOEFL iBT 79", "IELTS 6.0"],
+    "tests_accepted": [
+      "GRE",
+      "TOEFL iBT 79",
+      "IELTS 6.0"
+    ],
     "deadline": "April–May (annually)",
-    "benefits": ["Full tuition", "Living stipend", "Airfare", "Health insurance", "Accident insurance"],
+    "benefits": [
+      "Full tuition",
+      "Living stipend",
+      "Airfare",
+      "Health insurance",
+      "Accident insurance"
+    ],
     "link": "https://www.usefpakistan.org/programs/fulbright/",
     "source": "https://www.usefpakistan.org",
     "description": "The Fulbright program is the US government's flagship international exchange program. Pakistani students can pursue fully funded Masters and PhD programs at top US universities.",
     "open_to_pakistan": true,
     "slug": "fulbright-scholarship-usa",
     "intake_year": 2026,
-    "tags": ["fully-funded", "usa", "masters", "phd", "us-government"]
+    "tags": [
+      "fully-funded",
+      "usa",
+      "masters",
+      "phd",
+      "us-government"
+    ]
   },
   {
     "id": "turkiye-burslari",
     "name": "Türkiye Burslari (Turkey Government Scholarship)",
     "country": "Turkey",
     "university": "Turkish Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "800–1,400 TRY (varies)",
     "travel_allowance": "Yes — roundtrip flights",
     "ielts_required": false,
-    "tests_accepted": ["No English test required for Turkish programs", "IELTS for English programs"],
+    "tests_accepted": [
+      "No English test required for Turkish programs",
+      "IELTS for English programs"
+    ],
     "deadline": "February (annually)",
-    "benefits": ["Full tuition", "Monthly stipend", "Accommodation", "Health insurance", "Turkish language course", "Roundtrip flights"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend",
+      "Accommodation",
+      "Health insurance",
+      "Turkish language course",
+      "Roundtrip flights"
+    ],
     "link": "https://www.turkiyeburslari.gov.tr/",
     "source": "https://www.turkiyeburslari.gov.tr",
     "description": "Turkey's government scholarship program offers fully funded Bachelor, Masters, and PhD scholarships for international students including Pakistanis at top Turkish universities.",
     "open_to_pakistan": true,
     "slug": "turkiye-burslari-government-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "turkey", "bachelors", "masters", "phd", "no-ielts"]
+    "tags": [
+      "fully-funded",
+      "turkey",
+      "bachelors",
+      "masters",
+      "phd",
+      "no-ielts"
+    ]
   },
   {
     "id": "chinese-government-scholarship",
     "name": "Chinese Government Scholarship (CSC)",
     "country": "China",
     "university": "Chinese Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "CNY 2,500–3,500/month",
     "travel_allowance": "Yes",
     "ielts_required": false,
-    "tests_accepted": ["No IELTS for Chinese-medium programs", "IELTS 6.0 for English-medium programs"],
+    "tests_accepted": [
+      "No IELTS for Chinese-medium programs",
+      "IELTS 6.0 for English-medium programs"
+    ],
     "deadline": "March–April (annually)",
-    "benefits": ["Full tuition", "Accommodation", "Monthly stipend", "Medical insurance", "Chinese language training"],
+    "benefits": [
+      "Full tuition",
+      "Accommodation",
+      "Monthly stipend",
+      "Medical insurance",
+      "Chinese language training"
+    ],
     "link": "https://www.campuschina.org/scholarships/index.html",
     "source": "https://www.campuschina.org",
     "description": "The Chinese Government Scholarship offers fully funded opportunities for Pakistani students to pursue undergraduate, postgraduate, and doctoral programs at over 279 Chinese universities.",
     "open_to_pakistan": true,
     "slug": "chinese-government-scholarship-csc",
     "intake_year": 2026,
-    "tags": ["fully-funded", "china", "bachelors", "masters", "phd", "no-ielts"]
+    "tags": [
+      "fully-funded",
+      "china",
+      "bachelors",
+      "masters",
+      "phd",
+      "no-ielts"
+    ]
   },
   {
     "id": "australia-awards-pakistan",
     "name": "Australia Awards Scholarships",
     "country": "Australia",
     "university": "Australian Universities",
-    "degree": ["Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "AUD ~$27,000/year",
     "travel_allowance": "Yes — economy class airfare",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 84", "PTE Academic 58"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 84",
+      "PTE Academic 58"
+    ],
     "deadline": "April–June (annually)",
-    "benefits": ["Full tuition", "Living allowance", "Airfare", "Introductory academic program", "Health cover for self and dependents"],
+    "benefits": [
+      "Full tuition",
+      "Living allowance",
+      "Airfare",
+      "Introductory academic program",
+      "Health cover for self and dependents"
+    ],
     "link": "https://www.dfat.gov.au/people-to-people/australia-awards/Pages/australia-awards-scholarships",
     "source": "https://www.dfat.gov.au",
     "description": "Australia Awards Scholarships are long-term development awards offered by the Australian Government for Pakistani students to undertake full-time Master's or PhD study in Australia.",
     "open_to_pakistan": true,
     "slug": "australia-awards-scholarships",
     "intake_year": 2026,
-    "tags": ["fully-funded", "australia", "masters", "phd"]
+    "tags": [
+      "fully-funded",
+      "australia",
+      "masters",
+      "phd"
+    ]
   },
   {
     "id": "mext-japan",
     "name": "MEXT Japan Government Scholarship",
     "country": "Japan",
     "university": "Japanese National Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "143,000–145,000 JPY/month",
     "travel_allowance": "Yes — economy airfare",
     "ielts_required": false,
-    "tests_accepted": ["No IELTS required", "Japanese language training provided"],
+    "tests_accepted": [
+      "No IELTS required",
+      "Japanese language training provided"
+    ],
     "deadline": "May–June (Embassy track)",
-    "benefits": ["Full tuition", "Monthly stipend", "Airfare", "Japanese language course"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend",
+      "Airfare",
+      "Japanese language course"
+    ],
     "link": "https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm",
     "source": "https://www.mext.go.jp",
     "description": "Japan's Ministry of Education offers fully funded scholarships for Pakistani students to study at Japanese national universities. No Japanese language knowledge required — training is provided.",
     "open_to_pakistan": true,
     "slug": "mext-japan-government-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "japan", "bachelors", "masters", "phd", "no-ielts"]
+    "tags": [
+      "fully-funded",
+      "japan",
+      "bachelors",
+      "masters",
+      "phd",
+      "no-ielts"
+    ]
   },
   {
     "id": "stipendium-hungaricum",
     "name": "Stipendium Hungaricum Scholarship",
     "country": "Hungary",
     "university": "Hungarian Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "43,700–140,000 HUF/month",
     "travel_allowance": "No",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 5.5", "TOEFL 72", "B2 level English certificate"],
+    "tests_accepted": [
+      "IELTS 5.5",
+      "TOEFL 72",
+      "B2 level English certificate"
+    ],
     "deadline": "January–February (annually)",
-    "benefits": ["Full tuition", "Monthly stipend", "Dormitory accommodation or housing allowance", "Health insurance"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend",
+      "Dormitory accommodation or housing allowance",
+      "Health insurance"
+    ],
     "link": "https://stipendiumhungaricum.hu/",
     "source": "https://stipendiumhungaricum.hu",
     "description": "Hungary's Stipendium Hungaricum program offers fully funded scholarships to Pakistani students for Bachelor, Masters, and PhD programs at Hungarian universities.",
     "open_to_pakistan": true,
     "slug": "stipendium-hungaricum-hungary",
     "intake_year": 2026,
-    "tags": ["fully-funded", "hungary", "europe", "bachelors", "masters", "phd"]
+    "tags": [
+      "fully-funded",
+      "hungary",
+      "europe",
+      "bachelors",
+      "masters",
+      "phd"
+    ]
   },
   {
     "id": "swedish-institute-scholarship",
     "name": "Swedish Institute Scholarships for Global Professionals",
     "country": "Sweden",
     "university": "Swedish Universities",
-    "degree": ["Masters"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "SEK 11,000/month",
     "travel_allowance": "Yes",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90"
+    ],
     "deadline": "February (annually)",
-    "benefits": ["Full tuition", "Monthly grant SEK 11,000", "Travel grant", "Insurance"],
+    "benefits": [
+      "Full tuition",
+      "Monthly grant SEK 11,000",
+      "Travel grant",
+      "Insurance"
+    ],
     "link": "https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/",
     "source": "https://si.se",
     "description": "The Swedish Institute offers fully funded Masters scholarships for Pakistani students to study at Swedish universities, focusing on future leaders with work experience.",
     "open_to_pakistan": true,
     "slug": "swedish-institute-scholarship-sweden",
     "intake_year": 2026,
-    "tags": ["fully-funded", "sweden", "europe", "masters"]
+    "tags": [
+      "fully-funded",
+      "sweden",
+      "europe",
+      "masters"
+    ]
   },
   {
     "id": "korean-government-scholarship-gks",
     "name": "Korean Government Scholarship (KGSP/GKS)",
     "country": "South Korea",
     "university": "Korean Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "KRW 900,000–1,000,000/month",
     "travel_allowance": "Yes — economy airfare",
     "ielts_required": false,
-    "tests_accepted": ["No IELTS required", "Korean language training provided", "TOPIK score beneficial"],
+    "tests_accepted": [
+      "No IELTS required",
+      "Korean language training provided",
+      "TOPIK score beneficial"
+    ],
     "deadline": "September–October (Embassy track)",
-    "benefits": ["Full tuition", "Monthly allowance", "Airfare", "Settlement allowance", "Korean language training", "Health insurance"],
+    "benefits": [
+      "Full tuition",
+      "Monthly allowance",
+      "Airfare",
+      "Settlement allowance",
+      "Korean language training",
+      "Health insurance"
+    ],
     "link": "https://www.studyinkorea.go.kr/en/sub/gks/allnew_invite.do",
     "source": "https://www.studyinkorea.go.kr",
     "description": "South Korea's Global Korea Scholarship fully funds Pakistani students for undergraduate, postgraduate, and doctoral programs at Korean universities with free Korean language training.",
     "open_to_pakistan": true,
     "slug": "korean-government-scholarship-gks",
     "intake_year": 2026,
-    "tags": ["fully-funded", "south-korea", "bachelors", "masters", "phd", "no-ielts"]
+    "tags": [
+      "fully-funded",
+      "south-korea",
+      "bachelors",
+      "masters",
+      "phd",
+      "no-ielts"
+    ]
   },
   {
     "id": "austria-oead-scholarship",
     "name": "OeAD Austria Government Scholarship",
     "country": "Austria",
     "university": "Austrian Universities",
-    "degree": ["Masters", "PhD"],
-    "fields": ["Arts", "Music", "Sciences", "Social Sciences", "Natural Sciences"],
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "Arts",
+      "Music",
+      "Sciences",
+      "Social Sciences",
+      "Natural Sciences"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "€1,050/month",
     "travel_allowance": "Yes",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 6.0", "German B2 (for German programs)", "Medium of Instruction"],
+    "tests_accepted": [
+      "IELTS 6.0",
+      "German B2 (for German programs)",
+      "Medium of Instruction"
+    ],
     "deadline": "March 1 (annually)",
-    "benefits": ["Monthly grant €1,050", "Tuition exemption", "Travel subsidy", "Health insurance"],
+    "benefits": [
+      "Monthly grant €1,050",
+      "Tuition exemption",
+      "Travel subsidy",
+      "Health insurance"
+    ],
     "link": "https://oead.at/en/to-austria/grants-scholarships/",
     "source": "https://oead.at",
     "description": "OeAD provides government scholarships for Pakistani students to study at Austrian public universities with free or minimal tuition and a generous monthly stipend.",
     "open_to_pakistan": true,
     "slug": "oead-austria-government-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "austria", "europe", "masters", "phd", "free-tuition"]
+    "tags": [
+      "fully-funded",
+      "austria",
+      "europe",
+      "masters",
+      "phd",
+      "free-tuition"
+    ]
   },
   {
     "id": "hec-overseas-scholarship",
     "name": "HEC Overseas Scholarship for PhD",
     "country": "Multiple Countries",
     "university": "Top World Universities",
-    "degree": ["PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "Varies by country",
     "travel_allowance": "Yes",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90"
+    ],
     "deadline": "Rolling (check HEC website)",
-    "benefits": ["Full tuition", "Living allowance", "Airfare", "Research allowance", "Health insurance"],
+    "benefits": [
+      "Full tuition",
+      "Living allowance",
+      "Airfare",
+      "Research allowance",
+      "Health insurance"
+    ],
     "link": "https://www.hec.gov.pk/english/scholarshipsgrants/OS/Pages/Overseas-Scholarships.aspx",
     "source": "https://www.hec.gov.pk",
     "description": "Pakistan's Higher Education Commission funds PhD scholarships at world-class universities in USA, UK, Germany, Australia, and other countries for Pakistani nationals.",
     "open_to_pakistan": true,
     "slug": "hec-overseas-phd-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "phd", "pakistan-government", "multiple-countries"]
+    "tags": [
+      "fully-funded",
+      "phd",
+      "pakistan-government",
+      "multiple-countries"
+    ]
   },
   {
     "id": "eiffel-france-scholarship",
     "name": "Eiffel Excellence Scholarship France",
     "country": "France",
     "university": "French Grandes Écoles & Universities",
-    "degree": ["Masters", "PhD"],
-    "fields": ["Engineering", "Law", "Political Science", "Economics", "Management"],
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "Engineering",
+      "Law",
+      "Political Science",
+      "Economics",
+      "Management"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "€1,181/month (Masters), €1,400/month (PhD)",
     "travel_allowance": "Yes",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90", "DELF B2 for French programs"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90",
+      "DELF B2 for French programs"
+    ],
     "deadline": "January (annually)",
-    "benefits": ["Monthly stipend", "International travel allowance", "Cultural activities allowance", "Health insurance"],
+    "benefits": [
+      "Monthly stipend",
+      "International travel allowance",
+      "Cultural activities allowance",
+      "Health insurance"
+    ],
     "link": "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence",
     "source": "https://www.campusfrance.org",
     "description": "The Eiffel Excellence Program by Campus France offers fully funded scholarships to outstanding Pakistani students for Masters and PhD programs at top French institutions.",
     "open_to_pakistan": true,
     "slug": "eiffel-excellence-scholarship-france",
     "intake_year": 2026,
-    "tags": ["fully-funded", "france", "europe", "masters", "phd"]
+    "tags": [
+      "fully-funded",
+      "france",
+      "europe",
+      "masters",
+      "phd"
+    ]
   },
   {
     "id": "netherlands-orange-tulip",
     "name": "Orange Tulip Scholarship Netherlands",
     "country": "Netherlands",
     "university": "Dutch Universities",
-    "degree": ["Bachelors", "Masters"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Partial",
     "tuition_covered": false,
     "monthly_stipend": "Varies (€5,000–€25,000 total)",
     "travel_allowance": "No",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.0", "TOEFL iBT 80"],
+    "tests_accepted": [
+      "IELTS 6.0",
+      "TOEFL iBT 80"
+    ],
     "deadline": "February–March (varies by university)",
-    "benefits": ["Partial tuition waiver", "Cash award varies by institution"],
+    "benefits": [
+      "Partial tuition waiver",
+      "Cash award varies by institution"
+    ],
     "link": "https://www.studyinholland.nl/scholarships/orange-tulip-scholarship",
     "source": "https://www.studyinholland.nl",
     "description": "The Orange Tulip Scholarship is offered by Dutch universities and the Netherlands Education Support Office for meritorious Pakistani students to study in the Netherlands.",
     "open_to_pakistan": true,
     "slug": "orange-tulip-scholarship-netherlands",
     "intake_year": 2026,
-    "tags": ["partial", "netherlands", "europe", "bachelors", "masters"]
+    "tags": [
+      "partial",
+      "netherlands",
+      "europe",
+      "bachelors",
+      "masters"
+    ]
   },
   {
     "id": "italian-government-scholarship",
     "name": "Italian Government Scholarship (MAECI)",
     "country": "Italy",
     "university": "Italian Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["Arts", "Science", "Design", "Engineering", "Humanities"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "Arts",
+      "Science",
+      "Design",
+      "Engineering",
+      "Humanities"
+    ],
     "funding_type": "Partially Funded",
     "tuition_covered": true,
     "monthly_stipend": "€900/month",
     "travel_allowance": "No",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 5.5", "Italian B2 for Italian programs", "Medium of Instruction"],
+    "tests_accepted": [
+      "IELTS 5.5",
+      "Italian B2 for Italian programs",
+      "Medium of Instruction"
+    ],
     "deadline": "April (annually)",
-    "benefits": ["Monthly grant €900", "Tuition fee exemption at public universities"],
+    "benefits": [
+      "Monthly grant €900",
+      "Tuition fee exemption at public universities"
+    ],
     "link": "https://www.studiare-in-italia.it/studentistranieri/",
     "source": "https://www.esteri.it",
     "description": "The Italian Ministry of Foreign Affairs offers scholarships for Pakistani students to study at Italian universities, with free tuition at public institutions and a monthly stipend.",
     "open_to_pakistan": true,
     "slug": "italian-government-scholarship-maeci",
     "intake_year": 2026,
-    "tags": ["partial", "italy", "europe", "bachelors", "masters", "phd", "free-tuition"]
+    "tags": [
+      "partial",
+      "italy",
+      "europe",
+      "bachelors",
+      "masters",
+      "phd",
+      "free-tuition"
+    ]
   },
   {
     "id": "finland-university-scholarships",
     "name": "Finland University Scholarships",
     "country": "Finland",
     "university": "Finnish Universities (University of Helsinki, Aalto, etc.)",
-    "degree": ["Masters"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Partially Funded",
     "tuition_covered": false,
     "monthly_stipend": "€6,000–€10,000 per year",
     "travel_allowance": "No",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90", "PTE 62"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90",
+      "PTE 62"
+    ],
     "deadline": "January (annually)",
-    "benefits": ["Partial tuition waiver or full tuition", "Varies by university and program"],
+    "benefits": [
+      "Partial tuition waiver or full tuition",
+      "Varies by university and program"
+    ],
     "link": "https://www.studyinfinland.fi/scholarships",
     "source": "https://www.studyinfinland.fi",
     "description": "Finnish universities offer merit-based scholarships for Pakistani students covering partial or full tuition for Masters programs. Finland has high-quality education with affordable living.",
     "open_to_pakistan": true,
     "slug": "finland-university-scholarships",
     "intake_year": 2026,
-    "tags": ["partial", "finland", "europe", "masters"]
+    "tags": [
+      "partial",
+      "finland",
+      "europe",
+      "masters"
+    ]
   },
   {
     "id": "singapore-singa-scholarship",
     "name": "SINGA Singapore Scholarship (PhD)",
     "country": "Singapore",
     "university": "NUS, NTU, SUTD, ASTAR",
-    "degree": ["PhD"],
-    "fields": ["Science", "Engineering", "Mathematics", "Technology"],
+    "degree": [
+      "PhD"
+    ],
+    "fields": [
+      "Science",
+      "Engineering",
+      "Mathematics",
+      "Technology"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "SGD 2,200/month",
     "travel_allowance": "Yes",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90"
+    ],
     "deadline": "June and December (twice yearly)",
-    "benefits": ["Full tuition", "Monthly stipend SGD 2,200", "One-time airfare", "Settling-in allowance"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend SGD 2,200",
+      "One-time airfare",
+      "Settling-in allowance"
+    ],
     "link": "https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singa-award",
     "source": "https://www.a-star.edu.sg",
     "description": "SINGA is a prestigious PhD fellowship program at Singapore's top research universities and institutes, open to Pakistani students with strong STEM backgrounds.",
     "open_to_pakistan": true,
     "slug": "singa-singapore-phd-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "singapore", "phd", "stem"]
+    "tags": [
+      "fully-funded",
+      "singapore",
+      "phd",
+      "stem"
+    ]
   },
   {
     "id": "new-zealand-scholarship",
     "name": "New Zealand Scholarships (NZAS)",
     "country": "New Zealand",
     "university": "New Zealand Universities",
-    "degree": ["Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "NZD ~$25,000/year",
     "travel_allowance": "Yes",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90"
+    ],
     "deadline": "March (annually)",
-    "benefits": ["Full tuition", "Living allowance", "Return airfare", "Health insurance", "Establishment allowance"],
+    "benefits": [
+      "Full tuition",
+      "Living allowance",
+      "Return airfare",
+      "Health insurance",
+      "Establishment allowance"
+    ],
     "link": "https://www.mfat.govt.nz/en/aid-and-development/new-zealand-scholarships/",
     "source": "https://www.mfat.govt.nz",
     "description": "The New Zealand Government Scholarship supports Pakistani students to pursue Masters and PhD studies at New Zealand universities, fostering development-focused research.",
     "open_to_pakistan": true,
     "slug": "new-zealand-government-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "new-zealand", "oceania", "masters", "phd"]
+    "tags": [
+      "fully-funded",
+      "new-zealand",
+      "oceania",
+      "masters",
+      "phd"
+    ]
   },
   {
     "id": "canada-vanier-scholarship",
     "name": "Vanier Canada Graduate Scholarship",
     "country": "Canada",
     "university": "Canadian Universities",
-    "degree": ["PhD"],
-    "fields": ["Health Sciences", "Natural Sciences", "Engineering", "Social Sciences", "Humanities"],
+    "degree": [
+      "PhD"
+    ],
+    "fields": [
+      "Health Sciences",
+      "Natural Sciences",
+      "Engineering",
+      "Social Sciences",
+      "Humanities"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": false,
     "monthly_stipend": "CAD $50,000/year",
     "travel_allowance": "No",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 86"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 86"
+    ],
     "deadline": "Nominated by universities (November)",
-    "benefits": ["CAD $50,000 annual stipend for 3 years", "Prestigious recognition"],
+    "benefits": [
+      "CAD $50,000 annual stipend for 3 years",
+      "Prestigious recognition"
+    ],
     "link": "https://vanier.gc.ca/en/home-accueil.html",
     "source": "https://vanier.gc.ca",
     "description": "The Vanier CGS is one of Canada's most prestigious doctoral fellowships, awarded to top international PhD candidates including those from Pakistan.",
     "open_to_pakistan": true,
     "slug": "vanier-canada-graduate-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "canada", "phd"]
+    "tags": [
+      "fully-funded",
+      "canada",
+      "phd"
+    ]
   },
   {
     "id": "daad-helmut-schmidt",
     "name": "DAAD Helmut Schmidt Programme (Public Policy)",
     "country": "Germany",
     "university": "Various German Universities",
-    "degree": ["Masters"],
-    "fields": ["Public Policy", "Political Science", "Public Administration", "Law", "Economics"],
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "Public Policy",
+      "Political Science",
+      "Public Administration",
+      "Law",
+      "Economics"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "€934/month",
     "travel_allowance": "Yes",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 6.0", "TOEFL 550", "Medium of Instruction"],
+    "tests_accepted": [
+      "IELTS 6.0",
+      "TOEFL 550",
+      "Medium of Instruction"
+    ],
     "deadline": "October (annually)",
-    "benefits": ["Full tuition", "Monthly stipend €934", "Travel grant", "Health insurance", "Language course"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend €934",
+      "Travel grant",
+      "Health insurance",
+      "Language course"
+    ],
     "link": "https://www.daad.de/en/study-and-research-in-germany/scholarships/daad-scholarships/helmut-schmidt/",
     "source": "https://www.daad.de",
     "description": "The Helmut-Schmidt-Programme funds Masters degrees in public policy and related fields for future leaders from developing countries including Pakistan.",
     "open_to_pakistan": true,
     "slug": "daad-helmut-schmidt-programme-germany",
     "intake_year": 2026,
-    "tags": ["fully-funded", "germany", "europe", "masters", "no-ielts"]
+    "tags": [
+      "fully-funded",
+      "germany",
+      "europe",
+      "masters",
+      "no-ielts"
+    ]
   },
   {
     "id": "hungary- stipendium-phd",
     "name": "Stipendium Hungaricum PhD Scholarship",
     "country": "Hungary",
     "university": "Hungarian Universities (BME, ELTE, Corvinus etc.)",
-    "degree": ["PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "140,000 HUF/month",
     "travel_allowance": "No",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 5.5", "TOEFL 72", "B2 English certificate"],
+    "tests_accepted": [
+      "IELTS 5.5",
+      "TOEFL 72",
+      "B2 English certificate"
+    ],
     "deadline": "January–February (annually)",
-    "benefits": ["Full tuition", "Monthly stipend", "Accommodation allowance", "Health insurance"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend",
+      "Accommodation allowance",
+      "Health insurance"
+    ],
     "link": "https://stipendiumhungaricum.hu/",
     "source": "https://stipendiumhungaricum.hu",
     "description": "Stipendium Hungaricum fully funds PhD studies in Hungary for Pakistani students with strong academic backgrounds across all disciplines.",
     "open_to_pakistan": true,
     "slug": "stipendium-hungaricum-phd-hungary",
     "intake_year": 2026,
-    "tags": ["fully-funded", "hungary", "europe", "phd", "no-ielts"]
+    "tags": [
+      "fully-funded",
+      "hungary",
+      "europe",
+      "phd",
+      "no-ielts"
+    ]
   },
   {
     "id": "malaysia-mpc-scholarship",
     "name": "Malaysian Government Scholarship (MPC)",
     "country": "Malaysia",
     "university": "Malaysian Public Universities (UM, UTM, UPM)",
-    "degree": ["Masters", "PhD"],
-    "fields": ["STEM", "Agriculture", "Social Sciences"],
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "STEM",
+      "Agriculture",
+      "Social Sciences"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "MYR 1,500/month",
     "travel_allowance": "Yes",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 6.0", "TOEFL 550", "Medium of Instruction"],
+    "tests_accepted": [
+      "IELTS 6.0",
+      "TOEFL 550",
+      "Medium of Instruction"
+    ],
     "deadline": "March (annually)",
-    "benefits": ["Full tuition", "Monthly stipend", "Accommodation", "Airfare"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend",
+      "Accommodation",
+      "Airfare"
+    ],
     "link": "https://www.mpc.gov.my/",
     "source": "https://www.mpc.gov.my",
     "description": "Malaysia offers government scholarships for Pakistani students for Masters and PhD programs at top Malaysian public universities with affordable living costs.",
     "open_to_pakistan": true,
     "slug": "malaysia-government-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "malaysia", "asia", "masters", "phd", "no-ielts"]
+    "tags": [
+      "fully-funded",
+      "malaysia",
+      "asia",
+      "masters",
+      "phd",
+      "no-ielts"
+    ]
   },
   {
     "id": "czech-republic-government-scholarship",
     "name": "Czech Republic Government Scholarship",
     "country": "Czech Republic",
     "university": "Czech Public Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "CZK 15,000/month",
     "travel_allowance": "Yes",
     "ielts_required": false,
-    "tests_accepted": ["Czech B2 (language study funded)", "IELTS 6.0 for English programs"],
+    "tests_accepted": [
+      "Czech B2 (language study funded)",
+      "IELTS 6.0 for English programs"
+    ],
     "deadline": "September (annually)",
-    "benefits": ["Free tuition at public universities", "Monthly stipend", "Czech language course funded"],
+    "benefits": [
+      "Free tuition at public universities",
+      "Monthly stipend",
+      "Czech language course funded"
+    ],
     "link": "https://www.dzs.cz/en/funding-from-the-czech-republic/scholarships-from-the-czech-republic-government/",
     "source": "https://www.dzs.cz",
     "description": "The Czech government offers fully funded scholarships to Pakistani students for all degree levels. Public universities in Czech Republic charge no tuition fees.",
     "open_to_pakistan": true,
     "slug": "czech-republic-government-scholarship",
     "intake_year": 2026,
-    "tags": ["fully-funded", "czech-republic", "europe", "bachelors", "masters", "phd", "free-tuition"]
+    "tags": [
+      "fully-funded",
+      "czech-republic",
+      "europe",
+      "bachelors",
+      "masters",
+      "phd",
+      "free-tuition"
+    ]
   },
   {
     "id": "norwegian-government-scholarship",
     "name": "Norway Quota Scholarship",
     "country": "Norway",
     "university": "Norwegian Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Partial",
     "tuition_covered": true,
     "monthly_stipend": "NOK ~12,000/month (loan/grant)",
     "travel_allowance": "No",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90"
+    ],
     "deadline": "December (annually)",
-    "benefits": ["Free tuition at public universities", "Norwegian State Educational Loan Fund support"],
+    "benefits": [
+      "Free tuition at public universities",
+      "Norwegian State Educational Loan Fund support"
+    ],
     "link": "https://www.lånekassen.no/en/",
     "source": "https://www.lånekassen.no",
     "description": "Norway offers free tuition at all public universities. Pakistani students can apply for degree programs and receive student loan/grant support through Lånekassen.",
     "open_to_pakistan": true,
     "slug": "norway-scholarship-free-tuition",
     "intake_year": 2026,
-    "tags": ["partial", "norway", "europe", "bachelors", "masters", "phd", "free-tuition"]
+    "tags": [
+      "partial",
+      "norway",
+      "europe",
+      "bachelors",
+      "masters",
+      "phd",
+      "free-tuition"
+    ]
   },
   {
     "id": "gates-cambridge-scholarship",
     "name": "Gates Cambridge Scholarship",
     "country": "United Kingdom",
     "university": "University of Cambridge",
-    "degree": ["Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "£21,000/year",
     "travel_allowance": "Yes — roundtrip airfare",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 7.5", "TOEFL iBT 110"],
+    "tests_accepted": [
+      "IELTS 7.5",
+      "TOEFL iBT 110"
+    ],
     "deadline": "October–December (annually, varies by course)",
-    "benefits": ["Full tuition fees", "Annual stipend £21,000", "Roundtrip airfare", "Visa costs", "Health insurance", "Academic development funding up to £2,000"],
+    "benefits": [
+      "Full tuition fees",
+      "Annual stipend £21,000",
+      "Roundtrip airfare",
+      "Visa costs",
+      "Health insurance",
+      "Academic development funding up to £2,000"
+    ],
     "link": "https://www.gatescambridge.org/apply/eligibility/",
     "source": "https://www.gatescambridge.org",
     "description": "The Gates Cambridge Scholarship funds outstanding postgraduate students from outside the UK to study at the University of Cambridge. Pakistani students with exceptional academics and leadership potential are eligible.",
     "open_to_pakistan": true,
     "slug": "gates-cambridge-scholarship-uk",
     "intake_year": 2027,
-    "tags": ["fully-funded", "uk", "masters", "phd", "prestigious"]
+    "tags": [
+      "fully-funded",
+      "uk",
+      "masters",
+      "phd",
+      "prestigious"
+    ]
   },
   {
     "id": "swiss-government-excellence-scholarship",
     "name": "Swiss Government Excellence Scholarship",
     "country": "Switzerland",
     "university": "Swiss Universities & Federal Institutes of Technology",
-    "degree": ["PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "CHF 1,920/month",
     "travel_allowance": "Yes — return airfare",
     "ielts_required": false,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90", "Medium of Instruction"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90",
+      "Medium of Instruction"
+    ],
     "deadline": "September (annually)",
-    "benefits": ["Monthly stipend CHF 1,920", "Tuition fee exemption", "Health insurance", "Return airfare", "Housing allowance"],
+    "benefits": [
+      "Monthly stipend CHF 1,920",
+      "Tuition fee exemption",
+      "Health insurance",
+      "Return airfare",
+      "Housing allowance"
+    ],
     "link": "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships",
     "source": "https://www.sbfi.admin.ch",
     "description": "The Swiss Government Excellence Scholarship provides fully funded PhD and postdoctoral research opportunities at top Swiss universities and research institutions for Pakistani scholars.",
     "open_to_pakistan": true,
     "slug": "swiss-government-excellence-scholarship",
     "intake_year": 2027,
-    "tags": ["fully-funded", "switzerland", "europe", "phd", "research"]
+    "tags": [
+      "fully-funded",
+      "switzerland",
+      "europe",
+      "phd",
+      "research"
+    ]
   },
   {
     "id": "heydar-aliyev-azerbaijan-2026",
     "name": "Heydar Aliyev International Educational Grant (Azerbaijan)",
     "country": "Azerbaijan",
     "university": "Azerbaijani Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "800 AZN/month",
     "travel_allowance": "Yes — one economy flight per year",
     "ielts_required": false,
-    "tests_accepted": ["Language preparatory course provided", "Medium of Instruction"],
+    "tests_accepted": [
+      "Language preparatory course provided",
+      "Medium of Instruction"
+    ],
     "deadline": "March 20, 2026",
-    "benefits": ["Full tuition", "Monthly stipend 800 AZN", "Medical insurance 200 AZN", "One economy flight per year", "Language preparatory courses"],
+    "benefits": [
+      "Full tuition",
+      "Monthly stipend 800 AZN",
+      "Medical insurance 200 AZN",
+      "One economy flight per year",
+      "Language preparatory courses"
+    ],
     "link": "https://www.hec.gov.pk/english/scholarshipsgrants/lao/AZS/Pages/default.aspx",
     "source": "https://www.hec.gov.pk",
     "description": "Azerbaijan's Heydar Aliyev International Educational Grant Program 2026-27 offers fully funded scholarships for Pakistani students via HEC. Three slots available for Bachelor, Masters, and PhD candidates at Azerbaijani universities.",
     "open_to_pakistan": true,
     "slug": "heydar-aliyev-azerbaijan-grant-2026",
     "intake_year": 2026,
-    "tags": ["fully-funded", "azerbaijan", "bachelors", "masters", "phd", "no-ielts", "new"]
+    "tags": [
+      "fully-funded",
+      "azerbaijan",
+      "bachelors",
+      "masters",
+      "phd",
+      "no-ielts",
+      "new"
+    ]
   },
   {
     "id": "manchester-great-scholarship-2026",
     "name": "University of Manchester GREAT Scholarship (Pakistan)",
     "country": "United Kingdom",
     "university": "University of Manchester",
-    "degree": ["Masters"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Partial",
     "tuition_covered": false,
     "monthly_stipend": "£15,000 tuition discount",
     "travel_allowance": "No",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90"
+    ],
     "deadline": "April 24, 2026",
-    "benefits": ["£15,000 tuition fee discount for one-year taught Masters"],
+    "benefits": [
+      "£15,000 tuition fee discount for one-year taught Masters"
+    ],
     "link": "https://www.manchester.ac.uk/study/international/country-specific-information/pakistan/scholarships/",
     "source": "https://www.manchester.ac.uk",
     "description": "The University of Manchester offers a GREAT Scholarship in partnership with the British Council for a Pakistani student applying for a one-year taught Masters course starting September 2026.",
     "open_to_pakistan": true,
     "slug": "manchester-great-scholarship-pakistan-2026",
     "intake_year": 2026,
-    "tags": ["partial", "uk", "masters", "british-council", "new"]
+    "tags": [
+      "partial",
+      "uk",
+      "masters",
+      "british-council",
+      "new"
+    ]
   },
   {
     "id": "lester-b-pearson-canada",
     "name": "Lester B. Pearson International Scholarship (University of Toronto)",
     "country": "Canada",
     "university": "University of Toronto",
-    "degree": ["Bachelors"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "Full residence support",
     "travel_allowance": "No",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 100"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 100"
+    ],
     "deadline": "November (annually, nominated by school)",
-    "benefits": ["Full tuition for 4 years", "Books and incidental fees", "Full residence support for 4 years"],
+    "benefits": [
+      "Full tuition for 4 years",
+      "Books and incidental fees",
+      "Full residence support for 4 years"
+    ],
     "link": "https://future.utoronto.ca/pearson/",
     "source": "https://future.utoronto.ca",
     "description": "The Lester B. Pearson International Scholarship at the University of Toronto is Canada's most prestigious undergraduate award, covering tuition, books, and residence for four years. 37 scholarships are available annually for outstanding international students including Pakistanis.",
     "open_to_pakistan": true,
     "slug": "lester-b-pearson-scholarship-canada",
     "intake_year": 2026,
-    "tags": ["fully-funded", "canada", "bachelors", "prestigious", "new"]
+    "tags": [
+      "fully-funded",
+      "canada",
+      "bachelors",
+      "prestigious",
+      "new"
+    ]
   },
   {
     "id": "romanian-government-scholarship-2026",
     "name": "Romanian Government Scholarship for Non-EU Students",
     "country": "Romania",
     "university": "Romanian Public Universities",
-    "degree": ["Bachelors", "Masters", "PhD"],
-    "fields": ["All Fields"],
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "€85/month (Bachelors/Masters), €152/month (PhD)",
     "travel_allowance": "No",
     "ielts_required": false,
-    "tests_accepted": ["Romanian language preparatory year provided", "IELTS 6.0 for English programs"],
+    "tests_accepted": [
+      "Romanian language preparatory year provided",
+      "IELTS 6.0 for English programs"
+    ],
     "deadline": "April 15, 2026",
-    "benefits": ["Full tuition waiver", "Monthly stipend", "Accommodation in student dormitories", "Romanian language preparatory year"],
+    "benefits": [
+      "Full tuition waiver",
+      "Monthly stipend",
+      "Accommodation in student dormitories",
+      "Romanian language preparatory year"
+    ],
     "link": "https://www.mae.ro/en/node/10251",
     "source": "https://www.mae.ro",
     "description": "The Romanian Government offers fully funded scholarships to citizens of non-EU countries including Pakistan. The program covers Bachelor, Masters, and PhD programs at Romanian public universities with a Romanian language preparatory year included.",
     "open_to_pakistan": true,
     "slug": "romanian-government-scholarship-2026",
     "intake_year": 2026,
-    "tags": ["fully-funded", "romania", "europe", "bachelors", "masters", "phd", "no-ielts", "new"]
+    "tags": [
+      "fully-funded",
+      "romania",
+      "europe",
+      "bachelors",
+      "masters",
+      "phd",
+      "no-ielts",
+      "new"
+    ]
   },
   {
     "id": "manchester-women-stem-2026",
     "name": "University of Manchester – British Council Women in STEM Scholarship",
     "country": "United Kingdom",
     "university": "University of Manchester",
-    "degree": ["Masters"],
-    "fields": ["Engineering", "Science", "Technology", "Mathematics"],
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "Engineering",
+      "Science",
+      "Technology",
+      "Mathematics"
+    ],
     "funding_type": "Fully Funded",
     "tuition_covered": true,
     "monthly_stipend": "Living allowance included",
     "travel_allowance": "Yes — economy class return airfare",
     "ielts_required": true,
-    "tests_accepted": ["IELTS 6.5", "TOEFL iBT 90"],
+    "tests_accepted": [
+      "IELTS 6.5",
+      "TOEFL iBT 90"
+    ],
     "deadline": "March 26, 2026",
-    "benefits": ["Full tuition fees", "Living allowance", "Economy class return airfare", "Warm clothing allowance"],
+    "benefits": [
+      "Full tuition fees",
+      "Living allowance",
+      "Economy class return airfare",
+      "Warm clothing allowance"
+    ],
     "link": "https://www.manchester.ac.uk/study/international/country-specific-information/pakistan/scholarships/",
     "source": "https://www.manchester.ac.uk",
     "description": "The University of Manchester offers five fully funded British Council Women in STEM scholarships to female students from South Asia, including Pakistan, for specific STEM Masters programmes starting September 2026.",
     "open_to_pakistan": true,
     "slug": "manchester-women-stem-scholarship-2026",
     "intake_year": 2026,
-    "tags": ["fully-funded", "uk", "masters", "stem", "women", "british-council", "new"]
+    "tags": [
+      "fully-funded",
+      "uk",
+      "masters",
+      "stem",
+      "women",
+      "british-council",
+      "new"
+    ]
+  },
+  {
+    "id": "aga-khan-foundation-scholarship",
+    "name": "Aga Khan Foundation International Scholarship Programme",
+    "country": "Multiple Countries",
+    "university": "Various Universities Worldwide",
+    "degree": [
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "funding_type": "Partially Funded (50% grant, 50% loan)",
+    "tuition_covered": true,
+    "monthly_stipend": "Varies by country",
+    "travel_allowance": "Yes",
+    "ielts_required": true,
+    "tests_accepted": [
+      "IELTS",
+      "TOEFL"
+    ],
+    "deadline": "March 31 (annually)",
+    "benefits": [
+      "Tuition fees (50% grant, 50% loan)",
+      "Living allowance",
+      "Travel allowance",
+      "Health insurance"
+    ],
+    "link": "https://the.akdn/en/what-we-do/developing-human-capacity/education/international-scholarships",
+    "source": "https://www.scholars4dev.com/2467/aga-khan-international-scholarships-for-developing-countrie/",
+    "description": "The Aga Khan Foundation International Scholarship Programme provides postgraduate scholarships for outstanding students from developing countries including Pakistan, on a 50% grant and 50% loan basis. Contact local AKF Pakistan office for exact deadline.",
+    "open_to_pakistan": true,
+    "slug": "aga-khan-foundation-international-scholarship",
+    "intake_year": 2026,
+    "tags": [
+      "postgraduate",
+      "masters",
+      "phd",
+      "pakistan-eligible",
+      "partially-funded"
+    ]
+  },
+  {
+    "id": "commonwealth-distance-learning-2026",
+    "name": "Commonwealth Distance Learning Scholarships",
+    "country": "United Kingdom",
+    "university": "UK Universities (Open University and others)",
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "funding_type": "Fully Funded",
+    "tuition_covered": true,
+    "monthly_stipend": "Study grants where required",
+    "travel_allowance": "N/A (distance learning)",
+    "ielts_required": true,
+    "tests_accepted": [
+      "IELTS",
+      "TOEFL"
+    ],
+    "deadline": "March 31, 2026",
+    "benefits": [
+      "Full tuition fees",
+      "Study grants where required"
+    ],
+    "link": "https://cscuk.fcdo.gov.uk/scholarships/commonwealth-distance-learning-scholarships/",
+    "source": "https://www.scholars4dev.com/3838/distance-learning-scholarships-for-developing-commonwealth-countries/",
+    "description": "Commonwealth Distance Learning Scholarships are for candidates from least developed and lower middle income Commonwealth countries including Pakistan, for part-time Masters study by distance learning at UK universities starting September/October 2026.",
+    "open_to_pakistan": true,
+    "slug": "commonwealth-distance-learning-scholarships-2026",
+    "intake_year": 2026,
+    "tags": [
+      "fully-funded",
+      "uk",
+      "masters",
+      "distance-learning",
+      "commonwealth",
+      "pakistan-eligible"
+    ]
+  },
+  {
+    "id": "bradford-bestway-scholarship-2026",
+    "name": "University of Bradford Bestway Foundation Scholarship (Pakistan)",
+    "country": "United Kingdom",
+    "university": "University of Bradford",
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "Science",
+      "Technology",
+      "Engineering",
+      "Mathematics"
+    ],
+    "funding_type": "Fully Funded",
+    "tuition_covered": true,
+    "monthly_stipend": "£6,665 per annum",
+    "travel_allowance": "No",
+    "ielts_required": true,
+    "tests_accepted": [
+      "IELTS 6.0",
+      "TOEFL"
+    ],
+    "deadline": "May 1, 2026",
+    "benefits": [
+      "Full tuition fees",
+      "Accommodation at The Green",
+      "£6,665 per annum living costs (3 instalments)"
+    ],
+    "link": "https://www.bradford.ac.uk/scholarships/bestway-foundation-scholarships-for-students-from-pakistan-2026-27/",
+    "source": "https://www.bradford.ac.uk/scholarships/bestway-foundation-scholarships-for-students-from-pakistan-2026-27/",
+    "description": "The Bestway Foundation is supporting 5 fully funded scholarships exclusively for students domiciled in Pakistan starting a full-time STEM Masters course at the University of Bradford in September 2026. Applications open April 1, 2026.",
+    "open_to_pakistan": true,
+    "slug": "bradford-bestway-foundation-scholarship-pakistan-2026",
+    "intake_year": 2026,
+    "tags": [
+      "fully-funded",
+      "uk",
+      "masters",
+      "stem",
+      "pakistan-specific",
+      "science",
+      "engineering"
+    ]
+  },
+  {
+    "id": "rotary-peace-fellowship-2026",
+    "name": "Rotary Peace Fellowship",
+    "country": "Multiple Countries",
+    "university": "University of Bradford UK, Uppsala University Sweden, University of Queensland Australia, University of North Carolina USA, Chulalongkorn University Thailand, International Christian University Japan",
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "Peace Studies",
+      "Conflict Resolution",
+      "International Relations",
+      "Social Sciences"
+    ],
+    "funding_type": "Fully Funded",
+    "tuition_covered": true,
+    "monthly_stipend": "Room and board covered",
+    "travel_allowance": "Yes — round-trip transportation",
+    "ielts_required": true,
+    "tests_accepted": [
+      "IELTS",
+      "TOEFL"
+    ],
+    "deadline": "May 15 (annually)",
+    "benefits": [
+      "Full tuition and fees",
+      "Room and board",
+      "Round-trip transportation",
+      "Internship and field study expenses"
+    ],
+    "link": "https://www.rotary.org/en/our-programs/peace-fellowships",
+    "source": "https://www.scholars4dev.com/8088/rotary-peace-fellowships/",
+    "description": "Rotary Peace Fellowships offer up to 50 fully funded Masters fellowships annually at top peace study centres worldwide. Open to all nationalities including Pakistan. Requires 3 years of related work experience.",
+    "open_to_pakistan": true,
+    "slug": "rotary-peace-fellowship-masters",
+    "intake_year": 2027,
+    "tags": [
+      "fully-funded",
+      "masters",
+      "peace-studies",
+      "international-relations",
+      "all-nationalities",
+      "rotary"
+    ]
   }
 ]
