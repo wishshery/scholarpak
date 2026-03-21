@@ -7,7 +7,7 @@
     "degree": [
       "Masters"
     ],
-    "fields": [
+    "fields": [h
       "Engineering",
       "Agriculture",
       "Environmental Sciences",
@@ -376,7 +376,7 @@
       "No IELTS required",
       "Japanese language training provided"
     ],
-    "deadline": "May–June (Embassy track)",
+    "deadline": "April–May 2026 (for 2027 intake, Embassy track)",
     "benefits": [
       "Full tuition",
       "Monthly stipend",
@@ -388,7 +388,7 @@
     "description": "Japan's Ministry of Education offers fully funded scholarships for Pakistani students to study at Japanese national universities. No Japanese language knowledge required — training is provided.",
     "open_to_pakistan": true,
     "slug": "mext-japan-government-scholarship",
-    "intake_year": 2026,
+    "intake_year": 2027,
     "tags": [
       "fully-funded",
       "japan",
@@ -816,7 +816,7 @@
       "IELTS 6.5",
       "TOEFL iBT 90"
     ],
-    "deadline": "June and December (twice yearly)",
+    "deadline": "June 1 and December 1 (twice yearly)",
     "benefits": [
       "Full tuition",
       "Monthly stipend SGD 2,200",
@@ -1615,6 +1615,152 @@
       "international-relations",
       "all-nationalities",
       "rotary"
+    ]
+  },
+  {
+    "id": "schwarzman-scholars-2027",
+    "name": "Schwarzman Scholars Program (Tsinghua University)",
+    "country": "China",
+    "university": "Tsinghua University",
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "Public Policy",
+      "Economics",
+      "Business",
+      "International Studies",
+      "Engineering",
+      "Science"
+    ],
+    "funding_type": "Fully Funded",
+    "tuition_covered": true,
+    "monthly_stipend": "Personal stipend provided",
+    "travel_allowance": "Yes — roundtrip airfare",
+    "ielts_required": false,
+    "tests_accepted": [
+      "TOEFL iBT 100",
+      "IELTS 7.0",
+      "GRE/GMAT optional"
+    ],
+    "deadline": "September 2026 (US & Global applicants)",
+    "benefits": [
+      "Full tuition",
+      "Room and board",
+      "Roundtrip airfare",
+      "Personal stipend",
+      "Health insurance",
+      "Study tours within China"
+    ],
+    "link": "https://www.schwarzmanscholars.org/admissions/",
+    "source": "https://www.schwarzmanscholars.org",
+    "description": "Schwarzman Scholars is a one-year fully funded Masters program at Tsinghua University in Beijing, designed to build a global community of future leaders. Open to all nationalities including Pakistan. Applications for the 2027-2028 cohort open April 2026.",
+    "open_to_pakistan": true,
+    "slug": "schwarzman-scholars-tsinghua-china",
+    "intake_year": 2027,
+    "tags": [
+      "fully-funded",
+      "china",
+      "masters",
+      "leadership",
+      "all-nationalities",
+      "tsinghua"
+    ]
+  },
+  {
+    "id": "kaist-scholarship-2026",
+    "name": "KAIST International Student Scholarship",
+    "country": "South Korea",
+    "university": "Korea Advanced Institute of Science and Technology (KAIST)",
+    "degree": [
+      "Bachelors",
+      "Masters",
+      "PhD"
+    ],
+    "fields": [
+      "Engineering",
+      "Science",
+      "Technology",
+      "Computer Science",
+      "AI",
+      "Robotics"
+    ],
+    "funding_type": "Fully Funded",
+    "tuition_covered": true,
+    "monthly_stipend": "KRW 350,000–400,000/month",
+    "travel_allowance": "No",
+    "ielts_required": true,
+    "tests_accepted": [
+      "TOEFL iBT 80",
+      "IELTS 6.5",
+      "TOEIC 720"
+    ],
+    "deadline": "April–May (Spring intake), September–October (Fall intake)",
+    "benefits": [
+      "Full tuition waiver",
+      "Monthly living stipend",
+      "National health insurance",
+      "Language training support"
+    ],
+    "link": "https://www.kaist.ac.kr/en/html/edu/03100502.html",
+    "source": "https://www.kaist.ac.kr",
+    "description": "KAIST, South Korea's top science and technology university, offers fully funded scholarships for international undergraduate, Masters, and PhD students. All programs are taught in English. Strong focus on STEM fields.",
+    "open_to_pakistan": true,
+    "slug": "kaist-scholarship-south-korea",
+    "intake_year": 2026,
+    "tags": [
+      "fully-funded",
+      "south-korea",
+      "bachelors",
+      "masters",
+      "phd",
+      "stem",
+      "engineering"
+    ]
+  },
+  {
+    "id": "brunei-darussalam-government-scholarship-2026",
+    "name": "Government of Brunei Darussalam Scholarship",
+    "country": "Brunei",
+    "university": "University of Brunei Darussalam (UBD)",
+    "degree": [
+      "Bachelors",
+      "Masters"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "funding_type": "Fully Funded",
+    "tuition_covered": true,
+    "monthly_stipend": "BND 500/month (Bachelors), BND 800/month (Masters)",
+    "travel_allowance": "Yes — return airfare",
+    "ielts_required": true,
+    "tests_accepted": [
+      "IELTS 6.0",
+      "TOEFL iBT 550"
+    ],
+    "deadline": "February (annually)",
+    "benefits": [
+      "Full tuition",
+      "Monthly allowance",
+      "Return airfare",
+      "Accommodation",
+      "Book allowance",
+      "Settling-in allowance"
+    ],
+    "link": "https://www.moe.gov.bn/bdgs/Pages/default.aspx",
+    "source": "https://www.moe.gov.bn",
+    "description": "The Government of Brunei Darussalam offers fully funded scholarships for international students including Pakistanis to pursue undergraduate and postgraduate studies at Brunei universities.",
+    "open_to_pakistan": true,
+    "slug": "brunei-darussalam-government-scholarship",
+    "intake_year": 2026,
+    "tags": [
+      "fully-funded",
+      "brunei",
+      "bachelors",
+      "masters",
+      "asia",
+      "all-nationalities"
     ]
   }
 ]
