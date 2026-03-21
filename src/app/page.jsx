@@ -64,7 +64,7 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-blue-200 max-w-2xl mx-auto leading-relaxed px-2">
-              Discover fully funded Bachelor, Master, and PhD scholarships worldwide. Updated daily.
+              Discover fully funded Bachelor, Master, and PhD scholarships worldwide. Updated March 21, 2026.
             </p>
 
             {/* Search */}
