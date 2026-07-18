@@ -1687,5 +1687,57 @@
       "phd",
       "clarendon"
     ]
+  },
+  {
+    "id": "yenching-academy-pku-2027",
+    "name": "Yenching Academy of Peking University Scholarship 2027",
+    "country": "China",
+    "university": "Peking University",
+    "degree": [
+      "Masters"
+    ],
+    "fields": [
+      "China Studies",
+      "Economics",
+      "Management",
+      "History",
+      "Politics",
+      "International Relations",
+      "Law",
+      "Literature",
+      "Culture"
+    ],
+    "funding_type": "Fully Funded",
+    "tuition_covered": true,
+    "monthly_stipend": "Monthly living stipend provided",
+    "travel_allowance": "Yes — round-trip international airfare",
+    "ielts_required": true,
+    "tests_accepted": [
+      "IELTS",
+      "TOEFL (for non-native English speakers)"
+    ],
+    "deadline": "Early December 2026 (2027 intake; recruitment opens September 2026)",
+    "benefits": [
+      "Full tuition",
+      "Monthly living stipend",
+      "Free accommodation",
+      "Round-trip international airfare",
+      "Health insurance"
+    ],
+    "link": "https://yenchingacademy.pku.edu.cn/",
+    "source": "https://apply.yca.pku.edu.cn/",
+    "description": "The Yenching Academy of Peking University offers a fully funded interdisciplinary Master's in China Studies to around 120 students worldwide, including Pakistan. It covers tuition, accommodation, a monthly stipend, airfare, and health insurance. Recruitment for the 2027 cohort is expected to open in September 2026 with a deadline in early December.",
+    "open_to_pakistan": true,
+    "slug": "yenching-academy-peking-university-china",
+    "intake_year": 2027,
+    "tags": [
+      "fully-funded",
+      "china",
+      "masters",
+      "peking-university",
+      "china-studies",
+      "all-nationalities",
+      "new"
+    ]
   }
 ]
