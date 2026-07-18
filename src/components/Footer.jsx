@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { GraduationCap, Mail, Send, Globe, Heart } from 'lucide-react';
+'use client'; import { useEffect, useState } from 'react'; import Link from 'next/link';
+import { GraduationCap, Mail, Send, Globe, Heart } from 'lucide-react'; function VisitorCounter(){const[count,setCount]=useState(null);useEffect(()=>{let cancelled=false;const base="https://abacus.jasoncameron.dev/";const path="scholarpak-com/unique-visitors";const today=new Date().toISOString().slice(0,10);let hit=false;try{if(localStorage.getItem("sp_last_visit")!==today){hit=true;localStorage.setItem("sp_last_visit",today);}}catch(e){hit=false;}fetch(base+(hit?"hit/":"get/")+path,{cache:"no-store"}).then((res)=>(res.ok?res.json():Promise.reject(res.status))).then((data)=>{if(!cancelled&&data&&typeof data.value==="number")setCount(data.value);}).catch(()=>{});return()=>{cancelled=true;};},[]);const display=count===null?String.fromCharCode(8212):count.toLocaleString("en-US");return(<div className="text-center"><div className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">Visitor Count</div><div className="mt-1 text-base font-extrabold text-gold-400 font-heading tabular-nums">{display}</div></div>);}
 
 const footerLinks = {
   Scholarships: [
@@ -98,7 +98,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="py-6 border-t border-brand-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 pb-safe">
+        <div className="py-6 border-t border-brand-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 pb-safe"><VisitorCounter />
           <p>© {new Date().getFullYear()} ScholarPak. Scholarships verified from official sources.</p>
           <p className="flex items-center gap-1">
             Made with <Heart className="w-3 h-3 text-red-400 fill-red-400" /> for Pakistani students
