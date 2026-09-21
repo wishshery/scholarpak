@@ -1,247 +1,113 @@
-'use client';
-import { useState, useRef, useEffect } from 'react';
-import Link from 'next/link';
-import { Menu, X, ChevronDown, Bell } from 'lucide-react';
-
-// Inline SVG Logo — always renders, no broken image fallback needed
-function ScholarPakLogo() {
-  return (
-    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Background circle */}
-      <circle cx="26" cy="26" r="26" fill="#1e3a8a"/>
-      {/* Graduation cap board */}
-      <polygon points="26,13 44,21 26,29 8,21" fill="#ffffff"/>
-      {/* Cap top shine */}
-      <polygon points="26,13 44,21 26,18" fill="#e0e7ff" opacity="0.4"/>
-      {/* Left tassel rope */}
-      <line x1="8" y1="21" x2="8" y2="31" stroke="#f59e0b" strokeWidth="2.5" strokeLinecap="round"/>
-      {/* Tassel ball */}
-      <circle cx="8" cy="33" r="2.5" fill="#f59e0b"/>
-      {/* Diploma scroll */}
-      <rect x="17" y="30" width="18" height="12" rx="2" fill="#f59e0b"/>
-      <rect x="19" y="32" width="14" height="2" rx="1" fill="#1e3a8a" opacity="0.5"/>
-      <rect x="19" y="36" width="10" height="2" rx="1" fill="#1e3a8a" opacity="0.5"/>
-      {/* Scroll ribbon */}
-      <rect x="23" y="29" width="6" height="14" rx="1" fill="#fbbf24"/>
-    </svg>
-  );
-}
-
-const navLinks = [
-  {
-    label: 'Scholarships',
-    href: '/scholarships',
-    children: [
-      { label: 'All Scholarships', href: '/scholarships' },
-      { label: 'Fully Funded', href: '/scholarships?funding=fully-funded' },
-      { label: 'No IELTS Required', href: '/scholarships?ielts=no' },
-      { label: 'Bachelor Scholarships', href: '/scholarships?degree=bachelors' },
-      { label: 'Masters Scholarships', href: '/scholarships?degree=masters' },
-      { label: 'PhD Scholarships', href: '/scholarships?degree=phd' },
-    ],
-  },
-  {
-    label: 'By Country',
-    href: '/countries',
-    children: [
-      { label: '🇩🇪 Germany', href: '/countries/germany' },
-      { label: '🇬🇧 United Kingdom', href: '/countries/united-kingdom' },
-      { label: '🇺🇸 United States', href: '/countries/united-states' },
-      { label: '🇹🇷 Turkey', href: '/countries/turkey' },
-      { label: '🇨🇳 China', href: '/countries/china' },
-      { label: '🇦🇺 Australia', href: '/countries/australia' },
-      { label: '🌍 View All Countries →', href: '/countries' },
-    ],
-  },
-  { label: 'Free Tuition', href: '/free-tuition' },
-  { label: 'AI Recommender', href: '/recommend' },
-  { label: 'Alerts', href: '/alerts' },
-];
-
+"use client";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import {
+  BookOpen,
+  Menu,
+  X,
+  ArrowRight,
+  Search,
+  Bookmark,
+  Compass,
+} from "lucide-react";
+import { useShortlist } from "./ShortlistProvider";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [dropdown, setDropdown] = useState(null);
-  const [mobileExpanded, setMobileExpanded] = useState(null);
-  const navRef = useRef(null);
-
-  // Close dropdown when clicking outside
+  const path = usePathname();
+  const { saved } = useShortlist();
+  const trigger = useRef(null);
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (navRef.current && !navRef.current.contains(e.target)) {
-        setDropdown(null);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('touchstart', handleClickOutside);
-    };
-  }, []);
-
-  // Close mobile menu on route change
-  const handleLinkClick = () => {
     setOpen(false);
-    setMobileExpanded(null);
-    setDropdown(null);
-  };
-
-  const toggleMobileExpanded = (label) => {
-    setMobileExpanded(mobileExpanded === label ? null : label);
-  };
-
+  }, [path]);
+  const links = [
+    { href: "/scholarships", label: "Scholarships" },
+    { href: "/countries", label: "Countries" },
+    {
+      href: "/shortlist",
+      label: `My shortlist${saved.length ? ` (${saved.length})` : ""}`,
+    },
+  ];
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-sm" ref={navRef}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group" onClick={handleLinkClick}>
-            <ScholarPakLogo />
-            <span className="font-extrabold text-2xl text-brand-900 font-heading tracking-tight">
-              Scholar<span className="text-gold-500">Pak</span>
-            </span>
+    <>
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
+      <header
+        className="premium-header"
+        onKeyDown={(e) => {
+          if (e.key === "Escape") {
+            setOpen(false);
+            trigger.current?.focus();
+          }
+        }}
+      >
+        <div className="premium-container header-inner">
+          <Link href="/" className="wordmark" aria-label="ScholarPak home">
+            <BookOpen strokeWidth={1.5} />
+            ScholarPak
           </Link>
-
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <div key={link.label} className="relative">
-                {link.children ? (
-                  <>
-                    <button
-                      className="flex items-center gap-1 px-4 py-2 text-slate-600 font-medium hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-all text-sm"
-                      onClick={() => setDropdown(dropdown === link.label ? null : link.label)}
-                      onMouseEnter={() => setDropdown(link.label)}
-                      onMouseLeave={() => setDropdown(null)}
-                      aria-expanded={dropdown === link.label}
-                    >
-                      {link.label}
-                      <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${dropdown === link.label ? 'rotate-180' : ''}`} />
-                    </button>
-
-                    {dropdown === link.label && (
-                      <div
-                        className="absolute top-full left-0 mt-1 w-56 bg-white border border-slate-100 rounded-2xl shadow-xl z-50"
-                        onMouseEnter={() => setDropdown(link.label)}
-                        onMouseLeave={() => setDropdown(null)}
-                      >
-                        <div className="p-2">
-                          {link.children.map((child) => (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              onClick={handleLinkClick}
-                              className="block px-4 py-2.5 text-sm text-slate-600 hover:text-brand-700 hover:bg-brand-50 rounded-xl transition-colors"
-                            >
-                              {child.label}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  <Link
-                    href={link.href}
-                    onClick={handleLinkClick}
-                    className="px-4 py-2 text-slate-600 font-medium hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-all text-sm block"
-                  >
-                    {link.label}
-                  </Link>
-                )}
-              </div>
+          <nav className="desktop-nav" aria-label="Main navigation">
+            {links.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                aria-current={path.startsWith(l.href) ? "page" : undefined}
+              >
+                {l.label}
+              </Link>
             ))}
           </nav>
-
-          {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-3">
-            <Link
-              href="/alerts"
-              className="flex items-center gap-2 text-sm font-semibold text-brand-700 hover:text-brand-900 transition-colors"
-            >
-              <Bell className="w-4 h-4" />
-              Get Alerts
-            </Link>
-            <Link href="/recommend" className="btn-primary text-sm py-2.5 px-5">
-              Find My Scholarship
-            </Link>
-          </div>
-
-          {/* Mobile hamburger toggle */}
+          <Link href="/recommend" className="premium-button header-cta">
+            Find my scholarships <ArrowRight size={17} />
+          </Link>
           <button
-            onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 rounded-lg hover:bg-slate-100 active:bg-slate-200 transition-colors"
-            aria-label={open ? 'Close menu' : 'Open menu'}
+            ref={trigger}
+            className="icon-button menu-toggle"
+            aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
+            aria-controls="mobile-menu"
+            onClick={() => setOpen(!open)}
           >
-            {open ? <X className="w-6 h-6 text-slate-700" /> : <Menu className="w-6 h-6 text-slate-700" />}
+            {open ? <X /> : <Menu />}
           </button>
         </div>
-      </div>
-
-      {/* Mobile menu — full accordion */}
-      {open && (
-        <div className="lg:hidden border-t border-slate-100 bg-white animate-fade-in max-h-[85vh] overflow-y-auto">
-          <div className="px-4 py-3 space-y-1">
-            {navLinks.map((link) => (
-              <div key={link.label}>
-                {link.children ? (
-                  <>
-                    <button
-                      onClick={() => toggleMobileExpanded(link.label)}
-                      className="w-full flex items-center justify-between px-4 py-3 text-slate-700 font-semibold hover:text-brand-700 hover:bg-brand-50 rounded-xl transition-colors"
-                      aria-expanded={mobileExpanded === link.label}
-                    >
-                      <span>{link.label}</span>
-                      <ChevronDown className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${mobileExpanded === link.label ? 'rotate-180' : ''}`} />
-                    </button>
-                    {mobileExpanded === link.label && (
-                      <div className="ml-2 mt-1 mb-2 border-l-2 border-brand-100 pl-3 space-y-1 animate-fade-in">
-                        {link.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            onClick={handleLinkClick}
-                            className="block px-4 py-2.5 text-sm text-slate-500 hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-colors"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  <Link
-                    href={link.href}
-                    onClick={handleLinkClick}
-                    className="block px-4 py-3 text-slate-700 font-semibold hover:text-brand-700 hover:bg-brand-50 rounded-xl transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                )}
-              </div>
+        {open && (
+          <nav
+            id="mobile-menu"
+            className="mobile-menu"
+            aria-label="Mobile navigation"
+          >
+            {[
+              ...links,
+              { href: "/free-tuition", label: "Tuition guides" },
+              { href: "/alerts", label: "Scholarship alerts" },
+              { href: "/recommend", label: "Find my scholarships" },
+            ].map((l) => (
+              <Link onClick={() => setOpen(false)} key={l.href} href={l.href}>
+                {l.label}
+                <ArrowRight size={16} />
+              </Link>
             ))}
-
-            {/* Mobile CTA buttons */}
-            <div className="pt-3 pb-2 border-t border-slate-100 space-y-2">
-              <Link
-                href="/alerts"
-                onClick={handleLinkClick}
-                className="flex items-center justify-center gap-2 w-full py-3 text-sm font-semibold text-brand-700 border border-brand-200 rounded-xl hover:bg-brand-50 transition-colors"
-              >
-                <Bell className="w-4 h-4" /> Get Scholarship Alerts
-              </Link>
-              <Link
-                href="/recommend"
-                onClick={handleLinkClick}
-                className="btn-primary w-full justify-center text-sm"
-              >
-                Find My Scholarship
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
-    </header>
+          </nav>
+        )}
+      </header>
+      <nav className="mobile-bottom-nav" aria-label="Quick navigation">
+        {[
+          { href: "/scholarships", label: "Discover", icon: Search },
+          { href: "/shortlist", label: "Saved", icon: Bookmark },
+          { href: "/recommend", label: "Find my fit", icon: Compass },
+        ].map(({ href, label, icon: Icon }) => (
+          <Link
+            key={href}
+            href={href}
+            aria-current={path.startsWith(href) ? "page" : undefined}
+          >
+            <Icon size={21} />
+            <span>{label}</span>
+          </Link>
+        ))}
+      </nav>
+    </>
   );
 }
