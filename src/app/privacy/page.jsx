@@ -36,11 +36,11 @@ export default function PrivacyPage() {
         </section>
 
         <section className="card p-6">
-          <h2 className="text-xl font-bold text-brand-900 font-heading mb-3">3. Cookies</h2>
+          <h2 className="text-xl font-bold text-brand-900 font-heading mb-3">3. Cookies and Local Storage</h2>
           <p className="text-slate-600 leading-relaxed">
             ScholarPak uses essential cookies only — for analytics (Google Analytics) and to remember
             your preferences. We do not use advertising cookies. You can disable cookies in your browser
-            settings, though this may affect some functionality.
+            settings, though this may affect some functionality. Your scholarship shortlist is saved in local storage on this browser and device. Remove saved items with their bookmark buttons, or clear site data in your browser to erase the shortlist.
           </p>
         </section>
 

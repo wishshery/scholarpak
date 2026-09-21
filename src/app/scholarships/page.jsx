@@ -1,59 +1,79 @@
-'use client';
-import { useState, useMemo } from 'react';
-import ScholarshipCard from '@/components/ScholarshipCard';
-import SearchFilter from '@/components/SearchFilter';
-import scholarshipsData from '@/data/scholarships.json';
-
-export default function ScholarshipsPage() {
-  const [filters, setFilters] = useState({ query: '', country: 'All Countries', degree: 'All Degrees', funding: 'All Funding', ielts: 'any' });
-
-  const filtered = useMemo(() => {
-    return scholarshipsData.filter((s) => {
-      const q = filters.query.toLowerCase();
-      if (q && !s.name.toLowerCase().includes(q) && !s.country.toLowerCase().includes(q) && !s.university.toLowerCase().includes(q) && !s.description.toLowerCase().includes(q)) return false;
-      if (filters.country !== 'All Countries' && s.country !== filters.country) return false;
-      if (filters.degree !== 'All Degrees' && !s.degree?.map(d => d.toLowerCase()).includes(filters.degree.toLowerCase())) return false;
-      if (filters.funding !== 'All Funding') {
-        if (filters.funding === 'Fully Funded' && !s.funding_type?.toLowerCase().includes('fully')) return false;
-        if (filters.funding === 'Partial' && s.funding_type?.toLowerCase().includes('fully')) return false;
-      }
-      if (filters.ielts === 'no' && s.ielts_required !== false) return false;
-      if (filters.ielts === 'yes' && s.ielts_required === false) return false;
-      return true;
-    });
-  }, [filters]);
-
+"use client";
+import { Suspense, useMemo } from "react";
+import { useSearchParams } from "next/navigation";
+import { Search } from "lucide-react";
+import ScholarshipCard from "@/components/ScholarshipCard";
+import SearchFilter from "@/components/SearchFilter";
+import data from "@/data/scholarships.json";
+import {
+  DEFAULT_FILTERS,
+  filtersFromParams,
+  filterScholarships,
+} from "@/lib/filters.mjs";
+function Catalog() {
+  const params = useSearchParams();
+  const filters = useMemo(() => filtersFromParams(params), [params]);
+  const filtered = useMemo(() => filterScholarships(data, filters), [filters]);
+  function update(next) {
+    const query = new URLSearchParams();
+    if (next.query) query.set("q", next.query);
+    for (const key of ["country", "degree", "funding"])
+      if (next[key]) query.set(key, next[key]);
+    if (next.ielts !== "any") query.set("ielts", next.ielts);
+    window.history.replaceState(
+      null,
+      "",
+      `/scholarships${query.size ? `?${query}` : ""}`,
+    );
+  }
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      {/* Page header */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-extrabold text-brand-900 font-heading">
-          International Scholarships for Pakistani Students
-        </h1>
-        <p className="text-slate-500 mt-2 text-lg">
-          Browse {scholarshipsData.length}+ verified scholarships from official sources. Updated daily.
-        </p>
-      </div>
-
-      {/* Filters */}
-      <div className="mb-8">
-        <SearchFilter onFilter={setFilters} total={filtered.length} />
-      </div>
-
-      {/* Results */}
-      {filtered.length === 0 ? (
-        <div className="text-center py-20">
-          <div className="text-5xl mb-4">🔍</div>
-          <h3 className="text-xl font-bold text-slate-700">No scholarships found</h3>
-          <p className="text-slate-500 mt-2">Try adjusting your filters or search terms.</p>
-        </div>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+    <>
+      <SearchFilter
+        filters={filters}
+        onFilter={update}
+        total={filtered.length}
+        onReset={() => update(DEFAULT_FILTERS)}
+      />
+      {filtered.length ? (
+        <div className="premium-card-grid">
           {filtered.map((s) => (
             <ScholarshipCard key={s.id} scholarship={s} />
           ))}
         </div>
+      ) : (
+        <div className="empty-state">
+          <Search size={30} />
+          <h2>A different path may be waiting.</h2>
+          <p>No scholarships match these filters. Try a broader search.</p>
+          <button
+            className="premium-button"
+            onClick={() => update(DEFAULT_FILTERS)}
+          >
+            Clear filters
+          </button>
+        </div>
       )}
+      <p className="source-note">
+        Funding and language requirements vary by programme. Confirm the current
+        cycle and full eligibility on the official provider’s website.
+      </p>
+    </>
+  );
+}
+export default function ScholarshipsPage() {
+  return (
+    <div className="premium-container catalog-section">
+      <div className="catalog-heading">
+        <p className="eyebrow">A world of possibility</p>
+        <h1>Find your next chapter.</h1>
+        <p>
+          Explore {data.length} scholarships for Pakistani students. Start with
+          your ambitions, narrow your options, and find the details that matter.
+        </p>
+      </div>
+      <Suspense fallback={<p role="status">Loading scholarships…</p>}>
+        <Catalog />
+      </Suspense>
     </div>
   );
 }
